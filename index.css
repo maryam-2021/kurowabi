@@ -1747,3 +1747,44 @@ footer {
     gap: 24px;
   }
 }
+
+/* Hero Silo Grid */
+.hsilos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 28px;
+  max-width: 440px;
+  margin-top: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  animation: fadeUp 1s 0.8s both;
+}
+.hsilo-link {
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--mist);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s, transform 0.25s;
+}
+.hsilo-link span {
+  font-family: var(--fj);
+  font-size: 9px;
+  color: var(--gold);
+  opacity: 0.8;
+}
+.hsilo-link:hover {
+  color: var(--cream);
+  transform: translateX(4px);
+}
+@media (max-width: 768px) {
+  .hsilos-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 28px;
+    padding-bottom: 18px;
+  }
+}
