@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KuroWabi — Dark Japandi Interior Design</title>
+  <meta name="description" content="The world's only destination for Dark Japandi interior design. Curated ideas, room guides and shop-the-look collections for moody, minimal, intentional spaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="pgbar"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">
+    <span class="en">KuroWabi</span>
+    <span class="jp">黒侘び — Dark Japandi</span>
+  </a>
+  <ul class="nl">
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#guide">The Style</a></li>
+    <li><a href="#lookbook">Lookbook</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#newsletter" class="cta">Free Guide</a></li>
+  </ul>
+  <div class="hbg" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="mmenu" id="mm">
+  <span class="mclose" onclick="toggleMenu()">✕</span>
+  <a href="#rooms" onclick="toggleMenu()">Rooms</a>
+  <a href="#guide" onclick="toggleMenu()">The Style</a>
+  <a href="#lookbook" onclick="toggleMenu()">Lookbook</a>
+  <a href="#articles" onclick="toggleMenu()">Articles</a>
+  <a href="#newsletter" onclick="toggleMenu()">Free Guide</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hl">
+    <div class="eyebrow"><span>Dark Japandi — The New Interior Language</span></div>
+    <h1>Where <em>shadow</em><br>becomes<br>sanctuary.<span class="jpline">闇の中に美しさを見つける</span></h1>
+    <p class="hsub">The world's only destination for Dark Japandi interior design — where wabi-sabi philosophy meets Scandinavian minimalism, draped in intentional darkness.</p>
+    <div class="hact">
+      <a href="#rooms" class="bp">Explore Rooms &nbsp;→</a>
+      <a href="#guide" class="bg">What is Dark Japandi?</a>
+    </div>
+    <div class="hstats">
+      <div>
+        <div class="sn" data-target="140">0+</div>
+        <div class="sl">Design guides</div>
+      </div>
+      <div>
+        <div class="sn" data-target="8">0</div>
+        <div class="sl">Room categories</div>
+      </div>
+      <div>
+        <div class="sn">100%</div>
+        <div class="sl">Curated &amp; intentional</div>
+      </div>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="hmosaic">
+      <div class="hmt">
+        <div class="mc"><img src="images/hero_1.jpg" alt="Dark Japandi bedroom sanctuary" loading="eager"></div>
+        <div class="mc"><img src="images/hero_2.jpg" alt="Minimalist ceramic detail" loading="eager"></div>
+      </div>
+      <div class="hmb">
+        <div class="mc"><img src="images/hero_3.jpg" alt="Sleek slate washroom" loading="eager"></div>
+        <div class="mc"><img src="images/hero_4.jpg" alt="Moody minimalist lounge corner" loading="eager"></div>
+      </div>
+    </div>
+    <div class="hline"></div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="phil reveal d1">
+  <div class="pi">
+    <span class="pjp">侘寂</span>
+    <span class="pen">Wabi-Sabi</span>
+    <p class="pdef">Finding beauty in imperfection, impermanence, and the simple authenticity of raw, organic materials.</p>
+  </div>
+  <div class="pdiv"></div>
+  <div class="pi">
+    <span class="pjp">渋味</span>
+    <span class="pen">Shibui</span>
+    <p class="pdef">An aesthetic of quiet, understated elegance, clean lines, and deep beauty that reveals itself over time.</p>
+  </div>
+  <div class="pdiv"></div>
+  <div class="pi">
+    <span class="pjp">金継ぎ</span>
+    <span class="pen">Kintsugi</span>
+    <p class="pdef">Treating breakage and repair as part of history, highlighting scars with gold to create greater strength.</p>
+  </div>
+</section>
+
+<!-- EXPLAINER -->
+<section class="expl" id="guide">
+  <div class="expli">
+    <div class="imgw reveal d1">
+      <img src="images/explainer.jpg" alt="Dark Japandi living room overview" loading="lazy">
+      <div class="ibadge">
+        <div class="ibt">The Lounge Loft</div>
+        <div class="ibs">Tokyo Residency</div>
+      </div>
+      <div class="fc">
+        <div class="fclbl">Materiality</div>
+        <div class="fcval">Charred Oak &amp; Clay</div>
+      </div>
+    </div>
+    <div class="reveal d2">
+      <div class="seyebrow">The Aesthetics of Shadow</div>
+      <h2 class="elead">A harmonious union of <em>Nordic functionalism</em> and <em>Japanese minimalism</em>, draped in silent dark tones.</h2>
+      <p class="ebody">Dark Japandi strips away the noise of modern life to reveal the quiet luxury of empty space (Ma), raw textures, and daylight playing against dark, atmospheric shadows. By focusing on rich, organic tones instead of stark whites, we create spaces that feel like a protective sanctuary.</p>
+      <div class="pillars">
+        <div class="pill">
+          <span class="pico">炭</span>
+          <h3 class="ptit">Charred Woods</h3>
+          <p class="pdsc">Embracing Shou Sugi Ban paneling and dark walnut furniture to ground the space.</p>
+        </div>
+        <div class="pill">
+          <span class="pico">静</span>
+          <h3 class="ptit">Silent Outlines</h3>
+          <p class="pdsc">Minimalist Scandinavian furniture with clean silhouettes and functional utility.</p>
+        </div>
+        <div class="pill">
+          <span class="pico">間</span>
+          <h3 class="ptit">Spacious Void</h3>
+          <p class="pdsc">Focusing on breathing room, intentional layout, and single sculptural accents.</p>
+        </div>
+        <div class="pill">
+          <span class="pico">陰</span>
+          <h3 class="ptit">Chiaroscuro</h3>
+          <p class="pdsc">Celebrating the interplay of warm, soft light filtering through atmospheric darkness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="cats" id="rooms">
+  <div class="catsi">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Curated Sanctuaries</span>
+      <h2 class="stitle">Explore our <em>spaces</em></h2>
+      <p class="ssub">Browse custom-styled rooms carefully configured for silence, depth, and rich organic materials.</p>
+    </div>
+    <div class="cgrid reveal d2">
+      <div class="cc">
+        <div class="cci">
+          <img src="images/cat_bedroom.jpg" alt="Dark Japandi bedrooms" loading="lazy">
+          <div class="cov"></div>
+        </div>
+        <div class="ccon">
+          <span class="clbl">Rooms</span>
+          <h3 class="cname">Bedrooms</h3>
+          <span class="ccount">18 Collections</span>
+        </div>
+        <div class="carr">→</div>
+      </div>
+      <div class="cc">
+        <div class="cci">
+          <img src="images/cat_lounge.jpg" alt="Dark Japandi lounge rooms" loading="lazy">
+          <div class="cov"></div>
+        </div>
+        <div class="ccon">
+          <span class="clbl">Rooms</span>
+          <h3 class="cname">Lounge Spaces</h3>
+          <span class="ccount">24 Collections</span>
+        </div>
+        <div class="carr">→</div>
+      </div>
+      <div class="cc">
+        <div class="cci">
+          <img src="images/cat_dining.jpg" alt="Dark Japandi culinary spaces" loading="lazy">
+          <div class="cov"></div>
+        </div>
+        <div class="ccon">
+          <span class="clbl">Rooms</span>
+          <h3 class="cname">Dining &amp; Culinary</h3>
+          <span class="ccount">12 Collections</span>
+        </div>
+        <div class="carr">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="feat">
+  <div class="feati">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Featured Collections</span>
+      <h2 class="stitle">The <em>collections</em></h2>
+      <p class="ssub">Take a deep dive into our most celebrated, custom-curated design templates.</p>
+    </div>
+    <div class="fgrid reveal d2">
+      <div class="fm">
+        <div class="fmi">
+          <img src="images/feat_main.jpg" alt="The Charcoal Atelier Loft" loading="lazy">
+        </div>
+        <div class="fmeta">
+          <span class="ftag">Atelier</span>
+          <h3 class="ftit">The Charcoal Atelier Loft</h3>
+          <p class="fexc">Step inside a converted Tokyo loft where rough concrete plaster walls meet dark cedar screen partitions and soft, organic linen window screens.</p>
+        </div>
+      </div>
+      <div class="fsb">
+        <div class="fs">
+          <div class="fsi">
+            <img src="images/feat_side_1.jpg" alt="The Sanctuary Washroom" loading="lazy">
+          </div>
+          <div class="fsmeta">
+            <span class="fstag">Sanctuary</span>
+            <h4 class="fstit">The Shadow Bath Sanctuary</h4>
+          </div>
+        </div>
+        <div class="fs">
+          <div class="fsi">
+            <img src="images/feat_side_2.jpg" alt="The Ashen Tatami Room" loading="lazy">
+          </div>
+          <div class="fsmeta">
+            <span class="fstag">Tea Room</span>
+            <h4 class="fstit">The Ashen Tatami Room</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELEMENTS -->
+<section class="elems">
+  <div class="elemsi">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Tactile Materials</span>
+      <h2 class="stitle">Organic <em>palettes</em></h2>
+      <p class="ssub">The natural foundations that define the authentic design language of Dark Japandi.</p>
+    </div>
+    <div class="egrid reveal d2">
+      <div class="ecard">
+        <div class="esw" style="background: #151514;"></div>
+        <h3 class="etit">Charred Cedar</h3>
+        <p class="edsc">Traditional carbonized wood siding (Shou Sugi Ban) that adds deep organic contrast and texture.</p>
+        <div class="etags">
+          <span class="etag">Material</span>
+          <span class="etag">Deep Ink</span>
+        </div>
+      </div>
+      <div class="ecard">
+        <div class="esw" style="background: #e2dacd;"></div>
+        <h3 class="etit">Raw Washi</h3>
+        <p class="edsc">Textured handmade paper used in sliding partitions and soft lanterns for warm, diffused light.</p>
+        <div class="etags">
+          <span class="etag">Lighting</span>
+          <span class="etag">Diffused</span>
+        </div>
+      </div>
+      <div class="ecard">
+        <div class="esw" style="background: #3c3c3a;"></div>
+        <h3 class="etit">Clay Plaster</h3>
+        <p class="edsc">Rough earthen walls with fine texture that absorb sound and bounce light with quiet imperfection.</p>
+        <div class="etags">
+          <span class="etag">Texture</span>
+          <span class="etag">Absorbent</span>
+        </div>
+      </div>
+      <div class="ecard">
+        <div class="esw" style="background: #5a5752;"></div>
+        <h3 class="etit">Organic Slate</h3>
+        <p class="edsc">Split-face dark stone slates used for flooring and wet surfaces, giving a raw, mountainous feeling.</p>
+        <div class="etags">
+          <span class="etag">Basics</span>
+          <span class="etag">Stone</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section class="lkbk" id="lookbook">
+  <div class="lkbki">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Visual Meditations</span>
+      <h2 class="stitle">Shop the <em>look</em></h2>
+      <p class="ssub">Hover over the glowing pins in our interactive visual meditations to explore and purchase curated pieces.</p>
+    </div>
+    <div class="lgrid reveal d2">
+      <div class="lc tall" id="lk-card-1">
+        <img src="images/lk_1.jpg" alt="Japandi room details" loading="lazy">
+        <span class="llabel">Lounge Seating corner</span>
+      </div>
+      <div class="lc wide" id="lk-card-2">
+        <img src="images/lk_2.jpg" alt="Low sideboard detail" loading="lazy">
+        <span class="llabel">Wabi Lowboard</span>
+      </div>
+      <div class="lc" id="lk-card-3">
+        <img src="images/hero_2.jpg" alt="Ceramic decor detail" loading="lazy">
+        <span class="llabel">Ceramics Study</span>
+      </div>
+      <div class="lc" id="lk-card-4">
+        <img src="images/feat_side_1.jpg" alt="Japandi bathroom sconce" loading="lazy">
+        <span class="llabel">Stone Washbasin corner</span>
+      </div>
+      <div class="lc wide" id="lk-card-5">
+        <img src="images/hero_4.jpg" alt="Dark Japandi reading lounge" loading="lazy">
+        <span class="llabel">Lounge Seating overview</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi">
+  <div class="testii">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Living in Shadows</span>
+      <h2 class="stitle">Resident <em>voices</em></h2>
+      <p class="ssub">Hear from those who have transformed their homes into moody, quiet spaces of sanctuary.</p>
+    </div>
+    <div class="tgrid reveal d2">
+      <div class="tc">
+        <div class="tstars">★★★★★</div>
+        <div class="tquote">“</div>
+        <p class="ttext">"KuroWabi completely changed my perspective on space. Living in intentional shadows has brought a profound sense of calm to my daily life."</p>
+        <div class="tauthor">
+          <div class="tavatar">KS</div>
+          <div>
+            <div class="tname">Kenji Sato</div>
+            <div class="trole">Architect, Tokyo Loft</div>
+          </div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tstars">★★★★★</div>
+        <div class="tquote">“</div>
+        <p class="ttext">"The collections are incredibly curated. The balance of warm textures and deep, moody tones feels premium, tactile, and highly artistic."</p>
+        <div class="tauthor">
+          <div class="tavatar">EL</div>
+          <div>
+            <div class="tname">Elena Lindqvist</div>
+            <div class="trole">Design Critic, Stockholm</div>
+          </div>
+        </div>
+      </div>
+      <div class="tc">
+        <div class="tstars">★★★★★</div>
+        <div class="tquote">“</div>
+        <p class="ttext">"Every guide is a masterclass in wabi-sabi. It's the perfect resource for anyone looking to design a space with true soul."</p>
+        <div class="tauthor">
+          <div class="tavatar">HT</div>
+          <div>
+            <div class="tname">Hiroshi Tanaka</div>
+            <div class="trole">Interior Stylist, Kyoto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl-s" id="newsletter">
+  <div class="nli reveal d1">
+    <h2 class="nltit">Subscribe to <em>intentional living</em></h2>
+    <p class="nlsub">Receive our free 120-page design guide 'Shadow &amp; Sanctuary', alongside curated collections, room layouts, and material palettes sent twice a month.</p>
+    <form class="nlform" onsubmit="event.preventDefault(); alert('Thank you for subscribing to KuroWabi.');">
+      <input type="email" placeholder="Enter your email address..." required>
+      <button type="submit">Get Free Guide</button>
+    </form>
+    <p class="nlnote">No spam. Unsubscribe at any time. Respecting space and silence.</p>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="artss" id="articles">
+  <div class="artsi">
+    <div class="sh reveal d1">
+      <span class="seyebrow">Written Reflections</span>
+      <h2 class="stitle">Latest <em>articles</em></h2>
+      <p class="ssub">Explore our editorial archive on wabi-sabi philosophy, material pairings, and dark interior design.</p>
+    </div>
+    <div class="agrid reveal d2">
+      <div class="ac" onclick="location.href='#guide'">
+        <div class="aimg">
+          <div class="aimgi">
+            <img src="images/cat_dining.jpg" alt="Article: Embracing Shadows" loading="lazy">
+          </div>
+        </div>
+        <div class="ameta">
+          <span class="atag">Philosophy</span>
+          <span class="adot"></span>
+          <span class="adate">July 12, 2026</span>
+        </div>
+        <h3 class="atit">Embracing Shadows: The Art of Tanizaki in Modern Spaces</h3>
+        <p class="aexc">Why the omission of light is the ultimate tool for creating a calming, intimate, and sacred home environment.</p>
+        <div class="aftr">
+          <span class="aread">Read Article &nbsp;→</span>
+          <span class="atime">6 Min Read</span>
+        </div>
+      </div>
+      <div class="ac" onclick="location.href='bedroom-guide.html'">
+        <div class="aimg">
+          <div class="aimgi">
+            <img src="images/cat_bedroom.jpg" alt="Article: Platform Bed Sanctuary" loading="lazy">
+          </div>
+        </div>
+        <div class="ameta">
+          <span class="atag">Styling</span>
+          <span class="adot"></span>
+          <span class="adate">June 28, 2026</span>
+        </div>
+        <h3 class="atit">Designing the Perfect Platform Bed Sanctuary</h3>
+        <p class="aexc">A complete guide to proportions, low-slung framing, and selecting textured linen sheets in ink and slate tones.</p>
+        <div class="aftr">
+          <span class="aread">Read Article &nbsp;→</span>
+          <span class="atime">5 Min Read</span>
+        </div>
+      </div>
+      <div class="ac" onclick="location.href='#guide'">
+        <div class="aimg">
+          <div class="aimgi">
+            <img src="images/feat_side_2.jpg" alt="Article: Shou Sugi Ban charred wood" loading="lazy">
+          </div>
+        </div>
+        <div class="ameta">
+          <span class="atag">Materials</span>
+          <span class="adot"></span>
+          <span class="adate">May 15, 2026</span>
+        </div>
+        <h3 class="atit">Shou Sugi Ban: The Timeless Appeal of Charred Wood</h3>
+        <p class="aexc">How this traditional Japanese technique provides textured, carbonized wood that adds deep organic contrast to minimal walls.</p>
+        <div class="aftr">
+          <span class="aread">Read Article &nbsp;→</span>
+          <span class="atime">8 Min Read</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fti">
+    <div class="ftop">
+      <div class="fb">
+        <h3 class="fbn">KuroWabi</h3>
+        <h4 class="fbj">黒侘び — Dark Japandi</h4>
+        <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+      </div>
+      <div>
+        <h4 class="fct">Rooms</h4>
+        <ul class="flinks">
+          <li><a href="#rooms">Bedrooms</a></li>
+          <li><a href="#rooms">Lounge Spaces</a></li>
+          <li><a href="#rooms">Dining &amp; Kitchens</a></li>
+          <li><a href="#rooms">Sanctuary Baths</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="fct">Design</h4>
+        <ul class="flinks">
+          <li><a href="#guide">The Philosophy</a></li>
+          <li><a href="#guide">Shou Sugi Ban</a></li>
+          <li><a href="#lookbook">Shop Lookbook</a></li>
+          <li><a href="#articles">Editorial Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="fct">Brand</h4>
+        <ul class="flinks">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Atelier Loft</a></li>
+          <li><a href="#">FAQ &amp; Care</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <div class="fcopy">
+        &copy; 2026 KuroWabi Studio. All rights reserved. Made with intention.
+      </div>
+      <div class="fsoc">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
