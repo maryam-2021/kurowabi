@@ -521,18 +521,42 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "KuroWabi",
-  "url": "https://kurowabi.pages.dev",
-  "description": "The world's only destination for Dark Japandi interior design. Curated ideas, room guides and shop-the-look collections for moody, minimal, intentional spaces.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "KuroWabi Studio",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://kurowabi.pages.dev/images/explainer.jpg"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kurowabi.pages.dev/#organization",
+      "name": "KuroWabi",
+      "url": "https://kurowabi.pages.dev",
+      "description": "The world's only editorial destination for Dark Japandi interior design.",
+      "sameAs": [
+        "https://pinterest.com/kurowabi",
+        "https://instagram.com/kurowabi"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kurowabi.pages.dev/#webpage",
+      "url": "https://kurowabi.pages.dev",
+      "name": "KuroWabi — Dark Japandi Interior Design",
+      "description": "Curated ideas, room guides and shop-the-look collections for moody, minimal, intentional Dark Japandi spaces.",
+      "isPartOf": { "@id": "https://kurowabi.pages.dev/#organization" },
+      "about": [
+        { "@type": "Thing", "name": "Dark Japandi", "sameAs": "https://www.wikidata.org/wiki/Q107325593" },
+        { "@type": "Thing", "name": "Wabi-Sabi", "sameAs": "https://www.wikidata.org/wiki/Q842829" },
+        { "@type": "Thing", "name": "Minimalism", "sameAs": "https://www.wikidata.org/wiki/Q188488" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://kurowabi.pages.dev/#rooms-list",
+      "name": "Dark Japandi Room Categories",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Dark Japandi Bedrooms", "url": "https://kurowabi.pages.dev/#rooms" },
+        { "@type": "ListItem", "position": 2, "name": "Dark Japandi Lounge Spaces", "url": "https://kurowabi.pages.dev/#rooms" },
+        { "@type": "ListItem", "position": 3, "name": "Dark Japandi Dining & Culinary", "url": "https://kurowabi.pages.dev/#rooms" }
+      ]
     }
-  }
+  ]
 }
 </script>
 
