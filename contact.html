@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect — KuroWabi Atelier</title>
+  <meta name="description" content="Inquire about custom Dark Japandi design consultations, collaborative partnerships, or contact our Tokyo and Copenhagen atelier locations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <div id="pgbar"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="nav">
+    <a href="index.html" class="logo" aria-label="KuroWabi Home">
+      <span class="en">KuroWabi</span>
+      <span class="jp">黒侘び — Dark Japandi</span>
+    </a>
+    <ul class="nl">
+      <li><a href="index.html#rooms">Rooms</a></li>
+      <li><a href="index.html#guide">The Style</a></li>
+      <li><a href="index.html#lookbook">Lookbook</a></li>
+      <li><a href="index.html#articles">Articles</a></li>
+      <li><a href="contact.html" class="cta">Connect</a></li>
+    </ul>
+    <div class="hbg" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER MENU -->
+  <div class="mmenu" id="mm">
+    <span class="mclose" onclick="toggleMenu()">✕</span>
+    <a href="index.html#rooms" onclick="toggleMenu()">Rooms</a>
+    <a href="index.html#guide" onclick="toggleMenu()">The Style</a>
+    <a href="index.html#lookbook" onclick="toggleMenu()">Lookbook</a>
+    <a href="index.html#articles" onclick="toggleMenu()">Articles</a>
+    <a href="contact.html" onclick="toggleMenu()">Connect</a>
+  </div>
+
+  <main>
+    <!-- CONTACT HERO SECTION -->
+    <section class="contact-hero" aria-labelledby="contact-hero-title">
+      <div class="contact-hero-container">
+        <span class="contact-eyebrow">Connect &amp; Collaborate</span>
+        <h1 id="contact-hero-title">Atelier <em>Inquiries</em></h1>
+        <p class="contact-hero-subtitle">Whether seeking a custom interior design consultation, exploring an editorial partnership, or requesting care support, we welcome your inquiry.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM & INFO SECTION -->
+    <section class="contact-main-section">
+      <div class="contact-grid">
+        <!-- FORM LEFT -->
+        <div class="form-container">
+          <h2 class="form-title">Send a <em>Message</em></h2>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Name">
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="email@address.com">
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry-type">
+                  <option value="consultation">Design Consultation</option>
+                  <option value="collaboration">Atelier Collaboration</option>
+                  <option value="press">Press &amp; Media</option>
+                  <option value="general">General Inquiries</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Describe your design project or inquiry..."></textarea>
+                <span class="error-msg" id="message-error">Please enter your message.</span>
+              </div>
+            </div>
+            <button type="submit" class="bp form-submit-btn">Submit Inquiry &nbsp;→</button>
+          </form>
+        </div>
+
+        <!-- INFO RIGHT -->
+        <div class="info-container">
+          <div class="info-block">
+            <h3 class="info-block-title">The Ateliers</h3>
+            <div class="atelier-location">
+              <h4 class="location-name">Copenhagen Atelier</h4>
+              <p class="location-details">Nørrebrogade 44, 2200 København N<br>cph@kurowabi.com | +45 32 89 01</p>
+            </div>
+            <div class="atelier-location">
+              <h4 class="location-name">Kyoto Atelier</h4>
+              <p class="location-details">Higashiyama-ku, Kyoto 605-0001<br>kyoto@kurowabi.com | +81 75 921 04</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <h3 class="info-block-title">General Inquiries</h3>
+            <p class="location-details">studio@kurowabi.com<br>Response time: 48 business hours.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SUCCESS MODAL TOAST -->
+  <div class="toast-overlay" id="toast">
+    <div class="toast-card">
+      <span class="toast-logo">KuroWabi</span>
+      <h3 class="toast-title">Inquiry <em>Received</em></h3>
+      <p class="toast-text">Thank you. Your message has been sent to our atelier studio. We will review your inquiry and connect with you within 48 hours.</p>
+      <button class="bg toast-close-btn" onclick="closeToast()">Close</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="fti">
+      <div class="ftop">
+        <div class="fb">
+          <h3 class="fbn">KuroWabi</h3>
+          <h4 class="fbj">黒侘び — Dark Japandi</h4>
+          <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+        </div>
+        <div>
+          <h4 class="fct">Rooms</h4>
+          <ul class="flinks">
+            <li><a href="index.html#rooms">Bedrooms</a></li>
+            <li><a href="index.html#rooms">Lounge Spaces</a></li>
+            <li><a href="index.html#rooms">Dining &amp; Kitchens</a></li>
+            <li><a href="index.html#rooms">Sanctuary Baths</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fct">Design</h4>
+          <ul class="flinks">
+            <li><a href="index.html#guide">The Philosophy</a></li>
+            <li><a href="index.html#guide">Shou Sugi Ban</a></li>
+            <li><a href="index.html#lookbook">Shop Lookbook</a></li>
+            <li><a href="index.html#articles">Editorial Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fct">Brand</h4>
+          <ul class="flinks">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#guide">Atelier Loft</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fbot">
+        <div class="fcopy">
+          &copy; 2026 KuroWabi Studio. All rights reserved. Made with intention. | <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a> | <a href="terms.html" style="text-decoration: underline;">Terms of Service</a>
+        </div>
+        <div class="fsoc">
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bedroom-guide.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

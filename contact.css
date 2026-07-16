@@ -1,0 +1,270 @@
+/* ── CONTACT HERO ── */
+.contact-hero {
+  padding: 140px 64px 80px;
+  background: var(--ink-2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.contact-hero-container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.contact-eyebrow {
+  font-family: var(--fj);
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 24px;
+}
+.contact-hero h1 {
+  font-family: var(--fd);
+  font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+.contact-hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.contact-hero-subtitle {
+  font-family: var(--fb);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--mist);
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+/* ── CONTACT MAIN GRID ── */
+.contact-main-section {
+  padding: 100px 64px;
+  background: var(--ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.contact-grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1.4fr;
+  gap: 100px;
+}
+
+/* ── FORM LEFT ── */
+.form-title {
+  font-family: var(--fd);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 40px;
+}
+.form-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-group label {
+  font-family: var(--fb);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.input-group input,
+.input-group select,
+.input-group textarea {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  padding: 14px 18px;
+  font-family: var(--fb);
+  font-size: 13px;
+  color: var(--cream);
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+.input-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: rgba(201, 169, 110, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+}
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: var(--stone);
+}
+
+/* Error States */
+.error-msg {
+  display: none;
+  font-family: var(--fb);
+  font-size: 11px;
+  color: #c96e6e;
+  margin-top: 4px;
+}
+.input-group.invalid input,
+.input-group.invalid textarea {
+  border-color: rgba(201, 110, 110, 0.5);
+}
+.input-group.invalid .error-msg {
+  display: block;
+}
+
+.form-submit-btn {
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+/* ── INFO RIGHT ── */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.info-block-title {
+  font-family: var(--fd);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 12px;
+}
+.atelier-location {
+  margin-bottom: 24px;
+}
+.atelier-location:last-child {
+  margin-bottom: 0;
+}
+.location-name {
+  font-family: var(--fd);
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+.location-details {
+  font-family: var(--fb);
+  font-size: 13px;
+  color: var(--mist);
+  line-height: 1.8;
+}
+
+/* ── TOAST MODAL OVERLAY ── */
+.toast-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 13, 12, 0.88);
+  backdrop-filter: blur(14px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.toast-overlay.active {
+  display: flex;
+}
+.toast-card {
+  background: var(--ink-2);
+  border: 1px solid rgba(201, 169, 110, 0.22);
+  border-radius: 4px;
+  padding: 48px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  animation: fadeUp 0.4s ease;
+}
+.toast-logo {
+  font-family: var(--fd);
+  font-size: 24px;
+  color: var(--cream);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.12);
+  padding-bottom: 12px;
+}
+.toast-title {
+  font-family: var(--fd);
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 14px;
+}
+.toast-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+.toast-text {
+  font-family: var(--fb);
+  font-size: 13px;
+  color: var(--mist);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+.toast-close-btn {
+  border: 1px solid rgba(201, 169, 110, 0.35);
+  background: transparent;
+  color: var(--gold);
+  padding: 12px 32px;
+  font-family: var(--fb);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.toast-close-btn:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* ── RESPONSIVE OVERRIDES ── */
+@media (max-width: 1080px) {
+  .contact-hero {
+    padding: 140px 48px 80px;
+  }
+  .contact-main-section {
+    padding: 100px 48px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 120px 24px 60px;
+  }
+  .contact-main-section {
+    padding: 80px 24px;
+  }
+  .toast-card {
+    padding: 32px 24px;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About KuroWabi — Dark Japandi Interior Design</title>
+  <meta name="description" content="KuroWabi is an editorial destination dedicated to Dark Japandi interior design—a refined fusion of Japanese wabi-sabi philosophy and Scandinavian minimalism.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <div id="pgbar"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="nav">
+    <a href="index.html" class="logo" aria-label="KuroWabi Home">
+      <span class="en">KuroWabi</span>
+      <span class="jp">黒侘び — Dark Japandi</span>
+    </a>
+    <ul class="nl">
+      <li><a href="index.html#rooms">Rooms</a></li>
+      <li><a href="index.html#guide">The Style</a></li>
+      <li><a href="index.html#lookbook">Lookbook</a></li>
+      <li><a href="index.html#articles">Articles</a></li>
+      <li><a href="contact.html" class="cta">Connect</a></li>
+    </ul>
+    <div class="hbg" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER MENU -->
+  <div class="mmenu" id="mm">
+    <span class="mclose" onclick="toggleMenu()">✕</span>
+    <a href="index.html#rooms" onclick="toggleMenu()">Rooms</a>
+    <a href="index.html#guide" onclick="toggleMenu()">The Style</a>
+    <a href="index.html#lookbook" onclick="toggleMenu()">Lookbook</a>
+    <a href="index.html#articles" onclick="toggleMenu()">Articles</a>
+    <a href="contact.html" onclick="toggleMenu()">Connect</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="about-hero" aria-labelledby="about-hero-title">
+      <div class="about-hero-content">
+        <span class="about-eyebrow">The Atelier &amp; Editorial</span>
+        <h1 id="about-hero-title">About <em>KuroWabi</em></h1>
+        <p class="about-hero-subtitle">Creating spaces where shadow becomes sanctuary.</p>
+      </div>
+      <div class="about-hero-image">
+        <img src="images/explainer.jpg" alt="Textured charcoal plaster wall and stone details" loading="eager">
+      </div>
+    </section>
+
+    <!-- OUR PHILOSOPHY -->
+    <section class="about-section philosophy-section" aria-labelledby="phil-title">
+      <div class="about-section-container">
+        <div class="section-left">
+          <span class="editorial-label">Our Philosophy</span>
+          <h2 id="phil-title" class="editorial-title">Design with <em>Intention</em></h2>
+        </div>
+        <div class="section-right">
+          <p class="editorial-lead">We believe beautiful homes are created through quiet living, natural materiality, and intentional shadowplay rather than chasing transient design trends.</p>
+          <p class="editorial-body">Dark Japandi interior design is not merely a styling choice; it is a refined architectural dialogue between the weathered authenticity of Japanese <em>wabi-sabi</em> and the structural honesty of Scandinavian minimalism, wrapped in deep, quiet tones.</p>
+          <p class="editorial-body">KuroWabi serves as a sanctuary for those looking to compose homes that feel slow, textured, and deeply personal. We curate spaces that embrace the natural patina of organic elements—charred cedar, raw slate, coarse linen, and hand-cast ceramics—allowing the play of light and shadow to create a sense of sacred quietude.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU'LL FIND -->
+    <section class="about-section categories-silo-section" aria-labelledby="silos-title">
+      <div class="about-section-container">
+        <div class="section-left">
+          <span class="editorial-label">The Archive</span>
+          <h2 id="silos-title" class="editorial-title">Topical <em>Silos</em></h2>
+        </div>
+        <div class="section-right">
+          <p class="editorial-lead">Our publication is structured into clear, focused categories designed to guide your design journey systematically.</p>
+          
+          <dl class="silo-accordion-list">
+            <div class="silo-accordion-item">
+              <dt>01 / Rooms</dt>
+              <dd>Detailed design breakdowns for <strong>Bedrooms</strong>, <strong>Living Rooms</strong>, <strong>Bathrooms</strong>, and <strong>Kitchens</strong>—focusing on proportion, texture, and light omission.</dd>
+            </div>
+            <div class="silo-accordion-item">
+              <dt>02 / Furnishings &amp; Lighting</dt>
+              <dd>Curated guides for selecting low-slung, organic wood <strong>Furniture</strong> and low-glare, warm <strong>Lighting</strong> to set a moody atmosphere.</dd>
+            </div>
+            <div class="silo-accordion-item">
+              <dt>03 / Materiality &amp; Palette</dt>
+              <dd>In-depth explorations of tactile <strong>Materials</strong> (like Shou Sugi Ban wood) and curated <strong>Colour Palettes</strong> focused on charcoal, soot, clay, and sand.</dd>
+            </div>
+            <div class="silo-accordion-item">
+              <dt>04 / Editorial Guides</dt>
+              <dd>Practical <strong>Styling Guides</strong> and interactive <strong>Shop the Look</strong> collections to help you source and style wabi-sabi spaces.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL PROMISE & AFFILIATE TRANSPARENCY -->
+    <section class="about-section dual-editorial-section" aria-labelledby="promise-title">
+      <div class="about-section-container">
+        <div class="section-left">
+          <span class="editorial-label">Our Values</span>
+          <h2 id="promise-title" class="editorial-title">Editorial <em>Promise</em></h2>
+        </div>
+        <div class="section-right">
+          <div class="dual-columns">
+            <div class="promise-col">
+              <h3 class="column-title">Timeless Integrity</h3>
+              <p class="editorial-body">Every space, recommendation, and design guide in KuroWabi is rigorously researched and crafted to inspire practical, beautiful interiors. Our evaluations are grounded firmly in aesthetics, structural functionality, and timeless design principles—never in passing trends.</p>
+            </div>
+            <div class="transparency-col">
+              <h3 class="column-title">Affiliate Transparency</h3>
+              <p class="editorial-body">To sustain the publication, some of our articles contain affiliate links, which reward us with a small commission on items purchased at no extra cost to our readers. Importantly, our commercial relationships never influence our editorial opinions or curations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING SECTION -->
+    <section class="about-closing" aria-labelledby="closing-title">
+      <div class="about-closing-bg">
+        <img src="images/hero_3.jpg" alt="Dark minimalist stone bath" loading="lazy">
+      </div>
+      <div class="about-closing-overlay">
+        <span class="about-eyebrow">Subscribe &amp; Explore</span>
+        <h2 id="closing-title">Begin Your <em>Sanctuary</em></h2>
+        <p class="about-closing-text">Receive curated design guides, material sourcebooks, and lookbook edits directly in your inbox.</p>
+        <a href="index.html#newsletter" class="bp">Join the Newsletter</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="fti">
+      <div class="ftop">
+        <div class="fb">
+          <h3 class="fbn">KuroWabi</h3>
+          <h4 class="fbj">黒侘び — Dark Japandi</h4>
+          <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+        </div>
+        <div>
+          <h4 class="fct">Rooms</h4>
+          <ul class="flinks">
+            <li><a href="index.html#rooms">Bedrooms</a></li>
+            <li><a href="index.html#rooms">Lounge Spaces</a></li>
+            <li><a href="index.html#rooms">Dining &amp; Kitchens</a></li>
+            <li><a href="index.html#rooms">Sanctuary Baths</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fct">Design</h4>
+          <ul class="flinks">
+            <li><a href="index.html#guide">The Philosophy</a></li>
+            <li><a href="index.html#guide">Shou Sugi Ban</a></li>
+            <li><a href="index.html#lookbook">Shop Lookbook</a></li>
+            <li><a href="index.html#articles">Editorial Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="fct">Brand</h4>
+          <ul class="flinks">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#guide">Atelier Loft</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fbot">
+        <div class="fcopy">
+          &copy; 2026 KuroWabi Studio. All rights reserved. Made with intention. | <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a> | <a href="terms.html" style="text-decoration: underline;">Terms of Service</a>
+        </div>
+        <div class="fsoc">
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bedroom-guide.js"></script>
+</body>
+</html>
