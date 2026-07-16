@@ -1,0 +1,10 @@
+{
+  "name": "KuroWabi",
+  "short_name": "KuroWabi",
+  "description": "Curated inspiration for Dark Japandi interiors, timeless materials and intentional living.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0c",
+  "theme_color": "#0d0d0c",
+  "icons": []
+}

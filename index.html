@@ -8,6 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <link rel="canonical" href="https://kurowabi.com/">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0d0d0c">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KuroWabi">
+  <meta property="og:title" content="KuroWabi — Dark Japandi Interior Design">
+  <meta property="og:description" content="Curated inspiration for Dark Japandi interiors, timeless materials and intentional living.">
+  <meta property="og:url" content="https://kurowabi.com/">
+  <meta property="og:image" content="https://kurowabi.com/images/hero_1.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KuroWabi — Dark Japandi Interior Design">
+  <meta name="twitter:description" content="Curated inspiration for Dark Japandi interiors, timeless materials and intentional living.">
+  <meta name="twitter:image" content="https://kurowabi.com/images/hero_1.jpg">
 </head>
 <body>
 
@@ -535,9 +553,9 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://kurowabi.pages.dev/#organization",
+      "@id": "https://kurowabi.com/#organization",
       "name": "KuroWabi",
-      "url": "https://kurowabi.pages.dev",
+      "url": "https://kurowabi.com",
       "description": "Curated inspiration for Dark Japandi interiors, timeless materials, and intentional living.",
       "sameAs": [
         "https://pinterest.com/kurowabi",
@@ -545,12 +563,20 @@
       ]
     },
     {
+      "@type": "WebSite",
+      "@id": "https://kurowabi.com/#website",
+      "url": "https://kurowabi.com",
+      "name": "KuroWabi",
+      "description": "Curated inspiration for Dark Japandi interiors, timeless materials and intentional living.",
+      "publisher": { "@id": "https://kurowabi.com/#organization" }
+    },
+    {
       "@type": "WebPage",
-      "@id": "https://kurowabi.pages.dev/#webpage",
-      "url": "https://kurowabi.pages.dev",
+      "@id": "https://kurowabi.com/#webpage",
+      "url": "https://kurowabi.com",
       "name": "KuroWabi — Dark Japandi Interior Design",
       "description": "Curated ideas, room guides and shop-the-look collections for moody, minimal, intentional Dark Japandi spaces.",
-      "isPartOf": { "@id": "https://kurowabi.pages.dev/#organization" },
+      "isPartOf": { "@id": "https://kurowabi.com/#website" },
       "about": [
         { "@type": "Thing", "name": "Dark Japandi", "sameAs": "https://www.wikidata.org/wiki/Q107325593" },
         { "@type": "Thing", "name": "Wabi-Sabi", "sameAs": "https://www.wikidata.org/wiki/Q842829" },
@@ -559,12 +585,12 @@
     },
     {
       "@type": "ItemList",
-      "@id": "https://kurowabi.pages.dev/#rooms-list",
+      "@id": "https://kurowabi.com/#rooms-list",
       "name": "Dark Japandi Room Categories",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Dark Japandi Bedrooms", "url": "https://kurowabi.pages.dev/#rooms" },
-        { "@type": "ListItem", "position": 2, "name": "Dark Japandi Lounge Spaces", "url": "https://kurowabi.pages.dev/#rooms" },
-        { "@type": "ListItem", "position": 3, "name": "Dark Japandi Dining & Culinary", "url": "https://kurowabi.pages.dev/#rooms" }
+        { "@type": "ListItem", "position": 1, "name": "Dark Japandi Bedrooms", "url": "https://kurowabi.com/#rooms" },
+        { "@type": "ListItem", "position": 2, "name": "Dark Japandi Lounge Spaces", "url": "https://kurowabi.com/#rooms" },
+        { "@type": "ListItem", "position": 3, "name": "Dark Japandi Dining & Culinary", "url": "https://kurowabi.com/#rooms" }
       ]
     }
   ]

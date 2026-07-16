@@ -27,7 +27,8 @@ for html_file in html_files:
             print(f"  [PROTOCOL] {link}")
             continue
             
-        resolved_path = os.path.normpath(os.path.join(project_dir, link))
+        link_path = link.lstrip("/")
+        resolved_path = os.path.normpath(os.path.join(project_dir, link_path))
         
         if os.path.exists(resolved_path):
             print(f"  [OK] {link} -> {resolved_path}")
