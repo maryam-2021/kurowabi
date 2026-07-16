@@ -51,39 +51,54 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── NUMBER COUNTER ANIMATION ──
   const countElements = document.querySelectorAll('.sn[data-target]');
   const countOptions = {
-    threshold: 0.5,
+    threshold: 0.1,
     rootMargin: '0px'
   };
 
-  const countObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target'), 10);
-        let start = 0;
-        const duration = 2000; // 2 seconds
-        const stepTime = Math.abs(Math.floor(duration / target));
-        
-        // Safety check to prevent dividing by zero or infinite speed
-        const interval = Math.max(stepTime, 15);
-        const increment = target / (duration / interval);
+  const startCounter = (el) => {
+    if (el.classList.contains('animated')) return;
+    el.classList.add('animated');
+    const target = parseInt(el.getAttribute('data-target'), 10);
+    let start = 0;
+    const duration = 1500; // Snappy 1.5 seconds
+    const stepTime = Math.max(Math.floor(duration / target), 15);
+    const increment = target / (duration / stepTime);
+    const hasPlus = el.textContent.includes('+');
 
-        const timer = setInterval(() => {
-          start += increment;
-          if (start >= target) {
-            el.textContent = target + (el.textContent.includes('+') ? '+' : '');
-            clearInterval(timer);
-          } else {
-            el.textContent = Math.floor(start) + (el.textContent.includes('+') ? '+' : '');
-          }
-        }, interval);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        el.textContent = target + (hasPlus ? '+' : '');
+        clearInterval(timer);
+      } else {
+        el.textContent = Math.floor(start) + (hasPlus ? '+' : '');
+      }
+    }, stepTime);
+  };
 
-        observer.unobserve(el); // Animate only once
+  if ('IntersectionObserver' in window) {
+    const countObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, countOptions);
+    
+    countElements.forEach(el => {
+      countObserver.observe(el);
+      // Double check: if it is already in viewport on load, start it!
+      const rect = el.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        startCounter(el);
+        countObserver.unobserve(el);
       }
     });
-  }, countOptions);
-
-  countElements.forEach(el => countObserver.observe(el));
+  } else {
+    // Fallback if IntersectionObserver not supported
+    countElements.forEach(el => startCounter(el));
+  }
 
   // ── INTERACTIVE HOTSPOTS (SHOP THE LOOK) ──
   const hotspotsData = [
