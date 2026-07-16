@@ -14,8 +14,8 @@
 <div id="pgbar"></div>
 
 <!-- NAV -->
-<nav id="nav">
-  <a href="#" class="logo">
+<header id="nav">
+  <a href="index.html" class="logo" aria-label="KuroWabi Home">
     <span class="en">KuroWabi</span>
     <span class="jp">黒侘び — Dark Japandi</span>
   </a>
@@ -31,7 +31,7 @@
     <span></span>
     <span></span>
   </div>
-</nav>
+</header>
 
 <div class="mmenu" id="mm">
   <span class="mclose" onclick="toggleMenu()">✕</span>
@@ -42,11 +42,15 @@
   <a href="#newsletter" onclick="toggleMenu()">Free Guide</a>
 </div>
 
+<!-- SEMANTIC MAIN -->
+<main>
+
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" aria-labelledby="hero-title">
   <div class="hl">
     <div class="eyebrow"><span>Dark Japandi — The New Interior Language</span></div>
-    <h1>Where <em>shadow</em><br>becomes<br>sanctuary.<span class="jpline">闇の中に美しさを見つける</span></h1>
+    <h1 id="hero-title">Where <em>shadow</em><br>becomes<br>sanctuary.<span class="jpline">闇の中に美しさを見つける</span></h1>
     <p class="hsub">The world's only destination for Dark Japandi interior design — where wabi-sabi philosophy meets Scandinavian minimalism, draped in intentional darkness.</p>
     <div class="hact">
       <a href="#rooms" class="bp">Explore Rooms &nbsp;→</a>
@@ -83,24 +87,33 @@
 </section>
 
 <!-- PHILOSOPHY -->
-<section class="phil reveal d1">
-  <div class="pi">
-    <span class="pjp">侘寂</span>
-    <span class="pen">Wabi-Sabi</span>
-    <p class="pdef">Finding beauty in imperfection, impermanence, and the simple authenticity of raw, organic materials.</p>
-  </div>
-  <div class="pdiv"></div>
-  <div class="pi">
-    <span class="pjp">渋味</span>
-    <span class="pen">Shibui</span>
-    <p class="pdef">An aesthetic of quiet, understated elegance, clean lines, and deep beauty that reveals itself over time.</p>
-  </div>
-  <div class="pdiv"></div>
-  <div class="pi">
-    <span class="pjp">金継ぎ</span>
-    <span class="pen">Kintsugi</span>
-    <p class="pdef">Treating breakage and repair as part of history, highlighting scars with gold to create greater strength.</p>
-  </div>
+<section class="phil reveal d1" aria-labelledby="phil-title">
+  <h2 id="phil-title" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Core Dark Japandi Philosophies</h2>
+  <dl class="phil-grid" style="display: contents;">
+    <div class="pi">
+      <dt>
+        <span class="pjp">侘寂</span>
+        <span class="pen">Wabi-Sabi</span>
+      </dt>
+      <dd class="pdef">Finding beauty in imperfection, impermanence, and the simple authenticity of raw, organic materials.</dd>
+    </div>
+    <div class="pdiv"></div>
+    <div class="pi">
+      <dt>
+        <span class="pjp">渋味</span>
+        <span class="pen">Shibui</span>
+      </dt>
+      <dd class="pdef">An aesthetic of quiet, understated elegance, clean lines, and deep beauty that reveals itself over time.</dd>
+    </div>
+    <div class="pdiv"></div>
+    <div class="pi">
+      <dt>
+        <span class="pjp">金継ぎ</span>
+        <span class="pen">Kintsugi</span>
+      </dt>
+      <dd class="pdef">Treating breakage and repair as part of history, highlighting scars with gold to create greater strength.</dd>
+    </div>
+  </dl>
 </section>
 
 <!-- EXPLAINER -->
@@ -392,7 +405,7 @@
       <p class="ssub">Explore our editorial archive on wabi-sabi philosophy, material pairings, and dark interior design.</p>
     </div>
     <div class="agrid reveal d2">
-      <div class="ac" onclick="location.href='#guide'">
+      <article class="ac" onclick="location.href='#guide'">
         <div class="aimg">
           <div class="aimgi">
             <img src="images/cat_dining.jpg" alt="Article: Embracing Shadows" loading="lazy">
@@ -410,7 +423,7 @@
           <span class="atime">6 Min Read</span>
         </div>
       </div>
-      <div class="ac" onclick="location.href='bedroom-guide.html'">
+      <article class="ac" onclick="location.href='bedroom-guide.html'">
         <div class="aimg">
           <div class="aimgi">
             <img src="images/cat_bedroom.jpg" alt="Article: Platform Bed Sanctuary" loading="lazy">
@@ -428,7 +441,7 @@
           <span class="atime">5 Min Read</span>
         </div>
       </div>
-      <div class="ac" onclick="location.href='#guide'">
+      <article class="ac" onclick="location.href='#guide'">
         <div class="aimg">
           <div class="aimgi">
             <img src="images/feat_side_2.jpg" alt="Article: Shou Sugi Ban charred wood" loading="lazy">
@@ -445,10 +458,12 @@
           <span class="aread">Read Article &nbsp;→</span>
           <span class="atime">8 Min Read</span>
         </div>
-      </div>
+      </article>
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -501,5 +516,25 @@
 </footer>
 
 <script src="index.js"></script>
+
+<!-- SCHEMA JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "KuroWabi",
+  "url": "https://kurowabi.pages.dev",
+  "description": "The world's only destination for Dark Japandi interior design. Curated ideas, room guides and shop-the-look collections for moody, minimal, intentional spaces.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "KuroWabi Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kurowabi.pages.dev/images/explainer.jpg"
+    }
+  }
+}
+</script>
+
 </body>
 </html>
