@@ -29,6 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
         emailGroup.classList.remove('invalid');
       }
 
+      // Validate Subject
+      const subjectInput = document.getElementById('subject');
+      const subjectGroup = subjectInput.parentElement;
+      if (subjectInput.value.trim() === '') {
+        subjectGroup.classList.add('invalid');
+        isValid = false;
+      } else {
+        subjectGroup.classList.remove('invalid');
+      }
+
       // Validate Message
       const messageInput = document.getElementById('message');
       const messageGroup = messageInput.parentElement;

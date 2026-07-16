@@ -23,6 +23,10 @@ for html_file in html_files:
             print(f"  [EXTERNAL] {link}")
             continue
             
+        if link.startswith("mailto:") or link.startswith("tel:"):
+            print(f"  [PROTOCOL] {link}")
+            continue
+            
         resolved_path = os.path.normpath(os.path.join(project_dir, link))
         
         if os.path.exists(resolved_path):

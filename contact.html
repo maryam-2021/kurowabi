@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connect — KuroWabi Atelier</title>
-  <meta name="description" content="Inquire about custom Dark Japandi design consultations, collaborative partnerships, or contact our Tokyo and Copenhagen atelier locations.">
+  <title>Contact — KuroWabi</title>
+  <meta name="description" content="Connect with KuroWabi. Inquire about design collaborations, brand partnerships, affiliate recommendations, or send editorial questions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
@@ -48,73 +48,84 @@
     <!-- CONTACT HERO SECTION -->
     <section class="contact-hero" aria-labelledby="contact-hero-title">
       <div class="contact-hero-container">
-        <span class="contact-eyebrow">Connect &amp; Collaborate</span>
-        <h1 id="contact-hero-title">Atelier <em>Inquiries</em></h1>
-        <p class="contact-hero-subtitle">Whether seeking a custom interior design consultation, exploring an editorial partnership, or requesting care support, we welcome your inquiry.</p>
+        <span class="contact-eyebrow">Atelier Connections</span>
+        <h1 id="contact-hero-title">Contact <em>Kurowabi</em></h1>
+        <p class="contact-hero-subtitle">We'd love to hear from you.</p>
       </div>
     </section>
 
-    <!-- CONTACT FORM & INFO SECTION -->
+    <!-- CONTACT MAIN SECTION -->
     <section class="contact-main-section">
       <div class="contact-grid">
-        <!-- FORM LEFT -->
+        <!-- CHANNELS LEFT -->
+        <div class="info-container">
+          <div class="info-block">
+            <h2 class="info-block-title">Inquiry Channels</h2>
+            
+            <dl class="silo-accordion-list" style="margin-top: 24px; gap: 28px;">
+              <div class="silo-accordion-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 20px;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">Editorial Questions</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">For feedback, queries regarding our articles, or submissions to our design archive.</dd>
+              </div>
+              <div class="silo-accordion-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 20px;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">Design Collaborations</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">Co-creating moody spaces and unique furniture curations with architects and artisans.</dd>
+              </div>
+              <div class="silo-accordion-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 20px;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">Brand Partnerships</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">Sponsored editorial features, tailored lookbook placements, and creative alignments.</dd>
+              </div>
+              <div class="silo-accordion-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 20px;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">Affiliate &amp; Product Recommendations</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">For brands looking to be featured in our design guides or shop-the-look edits.</dd>
+              </div>
+              <div class="silo-accordion-item" style="border-bottom: 1px solid rgba(255,255,255,0.04); padding-bottom: 20px;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">Newsletter Support</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">Help regarding newsletter delivery, subscription preferences, or resource downloads.</dd>
+              </div>
+              <div class="silo-accordion-item" style="border-bottom: none; padding-bottom: 0;">
+                <dt style="font-family: var(--fd); font-size: 18px; color: var(--cream); font-weight: 300;">General Enquiries</dt>
+                <dd style="font-family: var(--fb); font-size: 13px; color: var(--mist); margin-top: 6px; line-height: 1.6;">For any other questions. Direct email: <a href="mailto:hello@kurowabi.com" style="color: var(--gold); text-decoration: underline;">hello@kurowabi.com</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- FORM RIGHT -->
         <div class="form-container">
           <h2 class="form-title">Send a <em>Message</em></h2>
           <form id="contact-form" novalidate>
             <div class="form-row">
               <div class="input-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required placeholder="Name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
                 <span class="error-msg" id="name-error">Please enter your name.</span>
               </div>
             </div>
             <div class="form-row">
               <div class="input-group">
-                <label for="email">Email Address</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required placeholder="email@address.com">
                 <span class="error-msg" id="email-error">Please enter a valid email address.</span>
               </div>
             </div>
             <div class="form-row">
               <div class="input-group">
-                <label for="inquiry-type">Inquiry Type</label>
-                <select id="inquiry-type" name="inquiry-type">
-                  <option value="consultation">Design Consultation</option>
-                  <option value="collaboration">Atelier Collaboration</option>
-                  <option value="press">Press &amp; Media</option>
-                  <option value="general">General Inquiries</option>
-                </select>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Inquiry Subject">
+                <span class="error-msg" id="subject-error">Please enter a subject.</span>
               </div>
             </div>
             <div class="form-row">
               <div class="input-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" required placeholder="Describe your design project or inquiry..."></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Describe your inquiry..."></textarea>
                 <span class="error-msg" id="message-error">Please enter your message.</span>
               </div>
             </div>
-            <button type="submit" class="bp form-submit-btn">Submit Inquiry &nbsp;→</button>
+            <button type="submit" class="bp form-submit-btn" style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 16px;">Submit Inquiry &nbsp;→</button>
+            <p class="form-note" style="font-family: var(--fb); font-size: 12px; color: var(--sand); text-align: center; margin-top: 16px;">We typically respond within 2–3 business days.</p>
           </form>
-        </div>
-
-        <!-- INFO RIGHT -->
-        <div class="info-container">
-          <div class="info-block">
-            <h3 class="info-block-title">The Ateliers</h3>
-            <div class="atelier-location">
-              <h4 class="location-name">Copenhagen Atelier</h4>
-              <p class="location-details">Nørrebrogade 44, 2200 København N<br>cph@kurowabi.com | +45 32 89 01</p>
-            </div>
-            <div class="atelier-location">
-              <h4 class="location-name">Kyoto Atelier</h4>
-              <p class="location-details">Higashiyama-ku, Kyoto 605-0001<br>kyoto@kurowabi.com | +81 75 921 04</p>
-            </div>
-          </div>
-
-          <div class="info-block">
-            <h3 class="info-block-title">General Inquiries</h3>
-            <p class="location-details">studio@kurowabi.com<br>Response time: 48 business hours.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -125,9 +136,14 @@
     <div class="toast-card">
       <span class="toast-logo">KuroWabi</span>
       <h3 class="toast-title">Inquiry <em>Received</em></h3>
-      <p class="toast-text">Thank you. Your message has been sent to our atelier studio. We will review your inquiry and connect with you within 48 hours.</p>
+      <p class="toast-text">Thank you. Your message has been sent to our atelier studio. We will review your inquiry and connect with you within 2–3 business days.</p>
       <button class="bg toast-close-btn" onclick="closeToast()">Close</button>
     </div>
+  </div>
+
+  <!-- EDITORIAL FOOTER PROMISE NOTE -->
+  <div class="editorial-footer-note" style="background: var(--ink); padding: 40px 24px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.04);">
+    <p style="font-family: var(--fd); font-size: 16px; font-style: italic; color: var(--mist); letter-spacing: 0.05em; max-width: 600px; margin: 0 auto;">Thank you for supporting independent editorial publishing.</p>
   </div>
 
   <!-- FOOTER -->
