@@ -198,7 +198,7 @@ nav.sc {
 }
 
 .hbg {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
