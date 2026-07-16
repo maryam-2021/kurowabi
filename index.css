@@ -125,7 +125,7 @@ a {
 }
 
 /* ── NAV ── */
-nav {
+#nav {
   position: fixed;
   inset: 0 0 auto;
   height: 68px;
@@ -138,7 +138,7 @@ nav {
   border-bottom: 1px solid transparent;
 }
 
-nav.sc {
+#nav.sc {
   background: rgba(13, 13, 12, .96);
   backdrop-filter: blur(20px);
   border-color: rgba(201, 169, 110, .12);
@@ -1687,7 +1687,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav {
+  #nav {
     padding: 0 20px;
   }
   .nl {
