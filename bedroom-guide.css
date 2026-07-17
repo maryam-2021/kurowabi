@@ -937,7 +937,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
-    .more-card { cursor: pointer; }
+    .more-card { cursor: pointer; display: block; }
     .more-card-img {
       border-radius: var(--radius-sm);
       overflow: hidden;
