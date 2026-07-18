@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dark Japandi Interior Design Articles — KuroWabi</title>
+<meta name="description" content="Dark Japandi interior design is the fusion of Japanese wabi-sabi philosophy and Scandinavian minimalism. Expert guides on materials, lighting, furniture and room design.">
+<meta property="og:title" content="Dark Japandi Articles — KuroWabi">
+<meta property="og:image" content="https://kurowabi.com/images/cat_bedroom.jpg">
+<link rel="canonical" href="https://kurowabi.com/articles.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+
+/* ── KuroWabi shared CSS ── */
+:root{
+  --kw-ink:#0d0d0c;--kw-ink2:#131210;--kw-ink3:#1a1917;
+  --kw-stone:#4a4744;--kw-sand:#7a7570;--kw-mist:#b0aa9f;
+  --kw-cream:#f4f0e8;--kw-gold:#c9a96e;--kw-goldl:#e2c99a;
+  --kw-fd:'Cormorant Garamond',Georgia,serif;
+  --kw-fj:'Noto Serif JP',serif;
+  --kw-fb:'DM Sans',system-ui,sans-serif;
+  --kw-max:1280px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--kw-fb);background:var(--kw-ink);color:var(--kw-cream);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block;object-fit:cover}
+a{color:inherit;text-decoration:none}
+#kw-pgbar{position:fixed;top:0;left:0;height:2px;background:var(--kw-gold);z-index:300;width:0;transition:width .12s linear;pointer-events:none}
+#kw-nav{position:fixed;inset:0 0 auto;height:68px;padding:0 52px;display:flex;align-items:center;justify-content:space-between;z-index:200;background:rgba(13,13,12,.97);backdrop-filter:blur(24px);border-bottom:1px solid rgba(201,169,110,.1)}
+.kw-logo{display:flex;flex-direction:column;gap:2px;line-height:1}
+.kw-logo-en{font-family:var(--kw-fd);font-size:22px;font-weight:400;letter-spacing:.08em;color:var(--kw-cream)}
+.kw-logo-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.22em;color:var(--kw-gold)}
+.kw-navl{display:flex;align-items:center;gap:32px;list-style:none}
+.kw-navl a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--kw-mist);transition:color .2s}
+.kw-navl a:hover,.kw-navl a.kw-on{color:var(--kw-cream)}
+.kw-cta{background:var(--kw-gold)!important;color:var(--kw-ink)!important;padding:8px 20px;border-radius:2px}
+.kw-cta:hover{background:var(--kw-goldl)!important}
+.kw-hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.kw-hbg span{width:24px;height:1.5px;background:var(--kw-cream);display:block}
+.kw-mob{display:none;position:fixed;inset:0;background:var(--kw-ink3);z-index:199;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.kw-mob.kw-open{display:flex}
+.kw-mob a{font-family:var(--kw-fd);font-size:32px;font-weight:300;color:var(--kw-cream);letter-spacing:.05em;transition:color .2s}
+.kw-mob a:hover{color:var(--kw-gold)}
+.kw-mob-x{position:absolute;top:24px;right:28px;font-size:24px;color:var(--kw-mist);cursor:pointer;background:none;border:none}
+.kw-rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.kw-rv.kw-in{opacity:1;transform:none}
+.kw-d1{transition-delay:.1s}.kw-d2{transition-delay:.2s}.kw-d3{transition-delay:.3s}
+.kw-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:16px}
+.kw-eyebrow::before,.kw-eyebrow::after{content:'';width:22px;height:1px;background:currentColor;opacity:.5}
+.kw-section-title{font-family:var(--kw-fd);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--kw-cream);line-height:1.15}
+.kw-section-title em{font-style:italic;color:var(--kw-gold)}
+.kw-section-sub{font-size:15px;color:var(--kw-mist);max-width:520px;margin:14px auto 0;line-height:1.78}
+.kw-foot{padding:72px 52px 36px;background:#080807;border-top:1px solid rgba(255,255,255,.04)}
+.kw-foot-i{max-width:var(--kw-max);margin:0 auto}
+.kw-foot-top{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:56px;margin-bottom:48px}
+.kw-foot-name{font-family:var(--kw-fd);font-size:26px;font-weight:300;color:var(--kw-cream);letter-spacing:.06em}
+.kw-foot-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.25em;color:var(--kw-gold);margin-bottom:12px}
+.kw-foot-brand p{font-size:13px;color:var(--kw-stone);line-height:1.75;max-width:260px}
+.kw-foot-h{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--kw-mist);margin-bottom:16px}
+.kw-foot-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.kw-foot-links a{font-size:13px;color:var(--kw-stone);transition:color .2s}
+.kw-foot-links a:hover{color:var(--kw-cream)}
+.kw-foot-bot{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid rgba(255,255,255,.04);font-size:11px;color:var(--kw-stone)}
+.kw-foot-soc{display:flex;gap:20px}
+.kw-foot-soc a{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-stone);transition:color .2s}
+.kw-foot-soc a:hover{color:var(--kw-gold)}
+@media(max-width:1080px){.kw-foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:768px){
+  #kw-nav{padding:0 20px}
+  .kw-navl{display:none}
+  .kw-hbg{display:flex}
+  .kw-foot{padding:48px 24px 28px}
+  .kw-foot-top{grid-template-columns:1fr;gap:28px}
+  .kw-foot-bot{flex-direction:column;gap:12px;text-align:center}
+  .kw-foot-soc{justify-content:center}
+}
+
+@keyframes kw-fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+.kw-art-hero{padding-top:68px;background:var(--kw-ink3);border-bottom:1px solid rgba(255,255,255,.04)}
+.kw-art-hero-inner{max-width:var(--kw-max);margin:0 auto;padding:64px 52px}
+.kw-art-lede{font-size:15px;font-weight:300;color:var(--kw-mist);max-width:640px;line-height:1.85;margin-top:18px}
+.kw-art-lede strong{color:var(--kw-cream);font-weight:400}
+
+.kw-bc{max-width:var(--kw-max);margin:0 auto;padding:0 52px;display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--kw-stone);padding-top:20px}
+.kw-bc a{color:var(--kw-gold);transition:color .2s}.kw-bc a:hover{color:var(--kw-goldl)}.kw-bc-s{opacity:.35}
+
+/* Filter */
+.kw-filter{max-width:var(--kw-max);margin:0 auto;padding:36px 52px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.05);padding-bottom:24px}
+.kw-filter-lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--kw-stone);margin-right:6px}
+.kw-ftab{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border:1px solid rgba(255,255,255,.07);border-radius:2px;color:var(--kw-mist);cursor:pointer;background:transparent;font-family:var(--kw-fb);transition:all .2s;white-space:nowrap}
+.kw-ftab:hover,.kw-ftab.kw-on{border-color:rgba(201,169,110,.4);color:var(--kw-cream);background:rgba(201,169,110,.07)}
+
+/* Layout */
+.kw-art-layout{max-width:var(--kw-max);margin:0 auto;padding:52px 52px 100px;display:grid;grid-template-columns:1fr 320px;gap:60px;align-items:start}
+
+/* Featured large card */
+.kw-feat-card{position:relative;overflow:hidden;border-radius:3px;cursor:pointer;margin-bottom:48px;display:block;text-decoration:none}
+.kw-feat-img{aspect-ratio:16/8;position:relative;overflow:hidden}
+.kw-feat-img img{width:100%;height:100%;object-fit:cover;transition:transform .65s ease}
+.kw-feat-card:hover .kw-feat-img img{transform:scale(1.04)}
+.kw-feat-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,12,.94) 0%,transparent 55%)}
+.kw-feat-body{position:absolute;bottom:0;left:0;right:0;padding:36px}
+.kw-feat-pill{display:inline-flex;align-items:center;gap:8px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--kw-gold);border:1px solid rgba(201,169,110,.35);padding:4px 12px;border-radius:2px;margin-bottom:14px}
+.kw-feat-title{font-family:var(--kw-fd);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:300;color:var(--kw-cream);line-height:1.13;margin-bottom:10px}
+.kw-feat-exc{font-size:13px;color:var(--kw-mist);line-height:1.65;max-width:520px}
+.kw-feat-meta{display:flex;align-items:center;gap:10px;margin-top:16px}
+.kw-feat-by{font-size:11px;color:var(--kw-sand)}
+.kw-feat-sep{width:3px;height:3px;border-radius:50%;background:var(--kw-stone)}
+.kw-feat-time{font-size:11px;color:var(--kw-stone)}
+.kw-feat-read{margin-left:auto;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-gold)}
+.kw-feat-card:hover .kw-feat-read{text-decoration:underline;text-underline-offset:4px}
+
+/* Grid heading */
+.kw-gh{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:28px}
+.kw-gh h2{font-family:var(--kw-fd);font-size:22px;font-weight:300;color:var(--kw-cream)}
+.kw-gh span{font-size:11px;color:var(--kw-stone)}
+
+/* Article cards */
+.kw-ag{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.kw-ac{cursor:pointer;display:block;text-decoration:none}
+.kw-ac-img{border-radius:2px;overflow:hidden;margin-bottom:16px;position:relative}
+.kw-ac-img-in{aspect-ratio:16/10;overflow:hidden}
+.kw-ac-img-in img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.kw-ac:hover .kw-ac-img-in img{transform:scale(1.05)}
+.kw-ac-badge{position:absolute;top:12px;left:12px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--kw-ink);background:var(--kw-gold);padding:4px 10px;border-radius:2px;z-index:2}
+.kw-ac-meta{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.kw-ac-tag{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--kw-gold)}
+.kw-ac-dot{width:3px;height:3px;border-radius:50%;background:var(--kw-stone)}
+.kw-ac-date{font-size:10px;color:var(--kw-stone)}
+.kw-ac-title{font-family:var(--kw-fd);font-size:19px;font-weight:300;color:var(--kw-cream);line-height:1.22;margin-bottom:8px;transition:color .2s}
+.kw-ac:hover .kw-ac-title{color:var(--kw-goldl)}
+.kw-ac-exc{font-size:12px;color:var(--kw-mist);line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.kw-ac-ftr{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.05)}
+.kw-ac-read{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-sand);transition:color .2s}
+.kw-ac:hover .kw-ac-read{color:var(--kw-gold)}
+.kw-ac-time{font-size:10px;color:var(--kw-stone)}
+
+/* SIDEBAR */
+.kw-sb{position:sticky;top:84px;display:flex;flex-direction:column;gap:28px}
+.kw-sb-nl{background:var(--kw-ink3);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:22px}
+.kw-sb-nl-jp{font-family:var(--kw-fj);font-size:8px;letter-spacing:.25em;color:var(--kw-gold);margin-bottom:8px;display:block}
+.kw-sb-nl-h{font-family:var(--kw-fd);font-size:21px;font-weight:300;color:var(--kw-cream);line-height:1.25;margin-bottom:8px}
+.kw-sb-nl-p{font-size:12px;color:var(--kw-sand);line-height:1.6;margin-bottom:14px}
+.kw-sb-nl input{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:2px;padding:10px 14px;font-family:var(--kw-fb);font-size:13px;color:var(--kw-cream);outline:none;margin-bottom:8px}
+.kw-sb-nl input::placeholder{color:var(--kw-stone)}
+.kw-sb-nl-btn{width:100%;background:var(--kw-gold);color:var(--kw-ink);border:none;border-radius:2px;padding:11px;font-family:var(--kw-fb);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.kw-sb-nl-btn:hover{background:var(--kw-goldl)}
+.kw-sb-divider{height:1px;background:rgba(255,255,255,.05)}
+.kw-sb-lbl{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--kw-mist);margin-bottom:14px}
+.kw-sb-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:4px}
+.kw-sb-tag{font-size:10px;letter-spacing:.06em;color:var(--kw-sand);border:1px solid rgba(255,255,255,.07);padding:5px 12px;border-radius:20px;cursor:pointer;transition:all .2s}
+.kw-sb-tag:hover{color:var(--kw-cream);border-color:rgba(201,169,110,.3);background:rgba(201,169,110,.06)}
+.kw-sb-quote{padding:20px;border:1px solid rgba(201,169,110,.12);border-radius:8px;background:rgba(201,169,110,.03)}
+.kw-sq-m{font-family:var(--kw-fd);font-size:36px;color:var(--kw-gold);opacity:.2;line-height:1;margin-bottom:8px}
+.kw-sq-t{font-family:var(--kw-fd);font-size:15px;font-style:italic;color:var(--kw-cream);line-height:1.55;margin-bottom:10px}
+.kw-sq-b{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--kw-gold)}
+
+@media(max-width:1080px){.kw-art-layout{grid-template-columns:1fr}.kw-sb{display:none}.kw-art-hero-inner,.kw-filter,.kw-art-layout{padding-left:32px;padding-right:32px}}
+@media(max-width:768px){.kw-art-hero-inner,.kw-filter,.kw-art-layout{padding-left:20px;padding-right:20px}.kw-ag{grid-template-columns:1fr}.kw-ac.kw-wide{grid-column:span 1;display:flex;flex-direction:column}.kw-ac.kw-wide .kw-ac-img{height:auto}.kw-ac.kw-wide .kw-ac-img-in{aspect-ratio:16/11;height:auto}}
+</style>
+</head>
+<body>
+<div id="kw-pgbar"></div>
+<nav id="kw-nav">
+  <a href="index.html" class="kw-logo" aria-label="KuroWabi home">
+    <span class="kw-logo-en">KuroWabi</span>
+    <span class="kw-logo-jp">黒侘び — Dark Japandi</span>
+  </a>
+  <ul class="kw-navl" role="navigation" aria-label="Main navigation">
+    <li><a href="/bedrooms/">Rooms</a></li>
+    <li><a href="lookbook.html" class="">Lookbook</a></li>
+    <li><a href="index.html#guide">The Style</a></li>
+    <li><a href="articles.html" class="kw-on">Articles</a></li>
+    <li><a href="about.html" class="">About</a></li>
+    <li><a href="contact.html" class="kw-cta">Connect</a></li>
+  </ul>
+  <button class="kw-hbg" onclick="document.getElementById('kw-mob').classList.toggle('kw-open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="kw-mob" id="kw-mob" role="dialog" aria-label="Mobile menu">
+  <button class="kw-mob-x" onclick="document.getElementById('kw-mob').classList.remove('kw-open')" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="/bedrooms/">Rooms</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Connect</a>
+</div>
+
+<div class="kw-art-hero">
+  <div class="kw-bc" style="padding-top:88px"><a href="index.html">Home</a><span class="kw-bc-s">/</span>Articles</div>
+  <div class="kw-art-hero-inner">
+    <div class="kw-eyebrow">Written Reflections</div>
+    <h1 class="kw-section-title">Dark Japandi<br><em>Editorial Archive</em></h1>
+    <p class="kw-art-lede"><strong>Dark Japandi is the fusion of Japanese wabi-sabi philosophy and Scandinavian minimalism</strong>, expressed through dark palettes, natural materials, intentional shadow, and quiet negative space. This archive covers Shou Sugi Ban, platform beds, ambient lighting, charred wood, linen textiles, and the philosophy of Tanizaki — the essential guides for designing a moody, minimal interior.</p>
+  </div>
+</div>
+
+<!-- FILTERS -->
+<div class="kw-filter kw-rv">
+  <span class="kw-filter-lbl">Topic</span>
+  <button class="kw-ftab kw-on" onclick="filterArticles(this, 'all')">All</button>
+  <button class="kw-ftab" onclick="filterArticles(this, 'philosophy')">Philosophy</button>
+  <button class="kw-ftab" onclick="filterArticles(this, 'styling')">Styling</button>
+  <button class="kw-ftab" onclick="filterArticles(this, 'materials')">Materials</button>
+</div>
+
+<div class="kw-art-layout">
+  <main>
+    <!-- FEATURED -->
+    <a href="embracing-shadows.html" class="kw-feat-card kw-rv" data-topic="philosophy">
+      <div class="kw-feat-img">
+        <img src="images/hero_1.jpg" alt="Embracing Shadows: The Art of Tanizaki in Modern Spaces">
+      </div>
+      <div class="kw-feat-body">
+        <div class="kw-feat-pill">★ Featured Philosophy</div>
+        <h2 class="kw-feat-title">Embracing Shadows: The Art of Tanizaki in Modern Spaces</h2>
+        <p class="kw-feat-exc">Why the omission of light is the ultimate tool for creating a calming, intimate, and sacred home environment — a deep dive into Tanizaki's shadow philosophy for contemporary Dark Japandi interiors.</p>
+        <div class="kw-feat-meta">
+          <span class="kw-feat-by">Yuki Tanaka</span>
+          <span class="kw-feat-sep"></span>
+          <span class="kw-feat-time">6 min read</span>
+          <span class="kw-feat-sep"></span>
+          <span class="kw-feat-by">Jul 12, 2026</span>
+          <span class="kw-feat-read">Read Article →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- GRID HEADING -->
+    <div class="kw-gh kw-rv">
+      <h2>Latest Reflections</h2>
+      <span>Showing 2 Articles</span>
+    </div>
+
+    <!-- GRID -->
+    <div class="kw-ag">
+      <!-- Card 2: Platform Bed -->
+      <a href="bedroom-guide.html" class="kw-ac kw-rv kw-d1" data-topic="styling">
+        <div class="kw-ac-img">
+          <div class="kw-ac-img-in"><img src="images/cat_bedroom.jpg" alt="Platform Bed Sanctuary"></div>
+          <div class="kw-ac-badge">Styling</div>
+        </div>
+        <div class="kw-ac-meta">
+          <span class="kw-ac-tag">Styling</span>
+          <span class="kw-ac-dot"></span>
+          <span class="kw-ac-date">Jun 28, 2026</span>
+        </div>
+        <h3 class="kw-ac-title">Designing the Perfect Platform Bed Sanctuary</h3>
+        <p class="kw-ac-exc">A complete guide to platform bed proportions, low-slung framing, material selection, and layering textured linen sheets in ink and slate tones.</p>
+        <div class="kw-ac-ftr">
+          <span class="kw-ac-read">Read Article →</span>
+          <span class="kw-ac-time">5 min read</span>
+        </div>
+      </a>
+
+      <!-- Card 3: Shou Sugi Ban -->
+      <a href="shou-sugi-ban.html" class="kw-ac kw-rv kw-d2" data-topic="materials">
+        <div class="kw-ac-img">
+          <div class="kw-ac-img-in"><img src="images/feat_side_2.jpg" alt="Shou Sugi Ban Charred Wood"></div>
+          <div class="kw-ac-badge">Materials</div>
+        </div>
+        <div class="kw-ac-meta">
+          <span class="kw-ac-tag">Materials</span>
+          <span class="kw-ac-dot"></span>
+          <span class="kw-ac-date">May 15, 2026</span>
+        </div>
+        <h3 class="kw-ac-title">Shou Sugi Ban: The Timeless Appeal of Charred Wood</h3>
+        <p class="kw-ac-exc">How the traditional Japanese technique of charred wood — yakisugi — provides textured, carbonised surfaces that add deep organic contrast and warmth to Dark Japandi interior walls and furniture.</p>
+        <div class="kw-ac-ftr">
+          <span class="kw-ac-read">Read Article →</span>
+          <span class="kw-ac-time">8 min read</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <aside class="kw-sb">
+    <div class="kw-sb-nl">
+      <span class="kw-sb-nl-jp">黒侘び — SOURCEBOOK</span>
+      <div class="kw-sb-nl-h">Subscribe to KuroWabi</div>
+      <p class="kw-sb-nl-p">Receive monthly design manuals, material palettes, and direct styling advice from our studio.</p>
+      <form onsubmit="event.preventDefault(); alert('Subscribed to KuroWabi.');">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="kw-sb-nl-btn">Subscribe</button>
+      </form>
+    </div>
+    
+    <div class="kw-sb-divider"></div>
+    
+    <div class="kw-sb-lbl">Popular Tags</div>
+    <div class="kw-sb-tags">
+      <span class="kw-sb-tag" onclick="filterArticlesByTag('philosophy')">Philosophy</span>
+      <span class="kw-sb-tag" onclick="filterArticlesByTag('styling')">Styling</span>
+      <span class="kw-sb-tag" onclick="filterArticlesByTag('materials')">Materials</span>
+    </div>
+
+    <div class="kw-sb-divider"></div>
+
+    <div class="kw-sb-quote">
+      <div class="kw-sq-m">“</div>
+      <p class="kw-sq-t">We find beauty not in the thing itself but in the patterns of shadows, the light and the darkness, that one thing against another creates.</p>
+      <div class="kw-sq-b">— Jun'ichirō Tanizaki</div>
+    </div>
+  </aside>
+</div>
+
+<footer class="kw-foot">
+  <div class="kw-foot-i">
+    <div class="kw-foot-top">
+      <div class="kw-foot-brand">
+        <div class="kw-foot-name">KuroWabi</div>
+        <div class="kw-foot-jp">黒侘び — Dark Japandi Studio</div>
+        <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+      </div>
+      <div><div class="kw-foot-h">Rooms</div><ul class="kw-foot-links"><li><a href="/bedrooms/">Bedrooms</a></li><li><a href="/index.html#rooms">Lounge Spaces</a></li><li><a href="/index.html#rooms">Dining &amp; Kitchens</a></li><li><a href="/index.html#rooms">Sanctuary Baths</a></li></ul></div>
+      <div><div class="kw-foot-h">Design</div><ul class="kw-foot-links"><li><a href="index.html#guide">The Philosophy</a></li><li><a href="shou-sugi-ban.html">Shou Sugi Ban</a></li><li><a href="lookbook.html">Shop Lookbook</a></li><li><a href="articles.html">All Articles</a></li></ul></div>
+      <div><div class="kw-foot-h">Studio</div><ul class="kw-foot-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+    </div>
+    <div class="kw-foot-bot">
+      <span>© 2026 KuroWabi Studio. All rights reserved. Made with intention.</span>
+      <div class="kw-foot-soc">
+        <a href="https://www.instagram.com/kurowabi.studio/" target="_blank" rel="noopener" aria-label="KuroWabi on Instagram">Instagram</a>
+        <a href="https://www.pinterest.com/kurowabi/" target="_blank" rel="noopener" aria-label="KuroWabi on Pinterest">Pinterest</a>
+        <a href="https://www.youtube.com/@kurowabi" target="_blank" rel="noopener" aria-label="KuroWabi on YouTube">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+  const _pg=document.getElementById('kw-pgbar');
+  if(_pg)window.addEventListener('scroll',()=>{const d=document.documentElement;_pg.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'});
+  const _ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('kw-in');_ro.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.kw-rv').forEach(el=>_ro.observe(el));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}),);
+
+
+function filterArticles(btn, cat) {
+  document.querySelectorAll('.kw-ftab').forEach(b => b.classList.remove('kw-on'));
+  btn.classList.add('kw-on');
+  
+  document.querySelectorAll('.kw-feat-card, .kw-ac').forEach(card => {
+    const topic = card.dataset.topic || '';
+    if (cat === 'all' || topic === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function filterArticlesByTag(cat) {
+  const tabs = document.querySelectorAll('.kw-ftab');
+  tabs.forEach(t => {
+    if (t.textContent.toLowerCase() === cat.toLowerCase()) {
+      filterArticles(t, cat);
+    }
+  });
+}
+</script>
+</body>
+</html>

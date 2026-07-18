@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Dark Japandi Lookbook — Shop the Look | KuroWabi</title>
+
+<meta name="description" content="Shop the Dark Japandi look. Interactive lookbook with shoppable pins — curated furniture, ceramics, textiles, and lighting for moody minimal interiors.">
+
+<meta property="og:title" content="Dark Japandi Lookbook — Shop the Look | KuroWabi">
+
+<meta property="og:image" content="https://kurowabi.com/images/lk_1.jpg">
+
+<link rel="canonical" href="https://kurowabi.com/lookbook.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+/* ── KuroWabi shared CSS (renamed from AI defaults per SEO playbook) ── */
+
+:root{
+
+  --kw-ink:#0d0d0c;--kw-ink2:#131210;--kw-ink3:#1a1917;
+
+  --kw-stone:#4a4744;--kw-sand:#7a7570;--kw-mist:#b0aa9f;
+
+  --kw-cream:#f4f0e8;--kw-gold:#c9a96e;--kw-goldl:#e2c99a;
+
+  --kw-fd:'Cormorant Garamond',Georgia,serif;
+
+  --kw-fj:'Noto Serif JP',serif;
+
+  --kw-fb:'DM Sans',system-ui,sans-serif;
+
+  --kw-max:1280px;
+
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{font-family:var(--kw-fb);background:var(--kw-ink);color:var(--kw-cream);line-height:1.7;overflow-x:hidden}
+
+img{max-width:100%;display:block;object-fit:cover}
+
+a{color:inherit;text-decoration:none}
+
+#kw-pgbar{position:fixed;top:0;left:0;height:2px;background:var(--kw-gold);z-index:300;width:0;transition:width .12s linear;pointer-events:none}
+
+#kw-nav{position:fixed;inset:0 0 auto;height:68px;padding:0 52px;display:flex;align-items:center;justify-content:space-between;z-index:200;background:rgba(13,13,12,.97);backdrop-filter:blur(24px);border-bottom:1px solid rgba(201,169,110,.1)}
+
+.kw-logo{display:flex;flex-direction:column;gap:2px;line-height:1}
+
+.kw-logo-en{font-family:var(--kw-fd);font-size:22px;font-weight:400;letter-spacing:.08em;color:var(--kw-cream)}
+
+.kw-logo-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.22em;color:var(--kw-gold)}
+
+.kw-navl{display:flex;align-items:center;gap:32px;list-style:none}
+
+.kw-navl a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--kw-mist);transition:color .2s}
+
+.kw-navl a:hover,.kw-navl a.kw-on{color:var(--kw-cream)}
+
+.kw-cta{background:var(--kw-gold)!important;color:var(--kw-ink)!important;padding:8px 20px;border-radius:2px}
+
+.kw-cta:hover{background:var(--kw-goldl)!important}
+
+.kw-hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+
+.kw-hbg span{width:24px;height:1.5px;background:var(--kw-cream);display:block}
+
+.kw-mob{display:none;position:fixed;inset:0;background:var(--kw-ink3);z-index:199;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+
+.kw-mob.kw-open{display:flex}
+
+.kw-mob a{font-family:var(--kw-fd);font-size:32px;font-weight:300;color:var(--kw-cream);letter-spacing:.05em;transition:color .2s}
+
+.kw-mob a:hover{color:var(--kw-gold)}
+
+.kw-mob-x{position:absolute;top:24px;right:28px;font-size:24px;color:var(--kw-mist);cursor:pointer;background:none;border:none}
+
+.kw-rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+
+.kw-rv.kw-in{opacity:1;transform:none}
+
+.kw-d1{transition-delay:.1s}.kw-d2{transition-delay:.2s}.kw-d3{transition-delay:.3s}
+
+/* Shared eyebrow */
+
+.kw-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:16px}
+
+.kw-eyebrow::before,.kw-eyebrow::after{content:'';width:22px;height:1px;background:currentColor;opacity:.5}
+
+.kw-section-title{font-family:var(--kw-fd);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--kw-cream);line-height:1.15}
+
+.kw-section-title em{font-style:italic;color:var(--kw-gold)}
+
+.kw-section-sub{font-size:15px;color:var(--kw-mist);max-width:520px;margin:14px auto 0;line-height:1.78}
+
+/* Footer */
+
+.kw-foot{padding:72px 52px 36px;background:#080807;border-top:1px solid rgba(255,255,255,.04)}
+
+.kw-foot-i{max-width:var(--kw-max);margin:0 auto}
+
+.kw-foot-top{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:56px;margin-bottom:48px}
+
+.kw-foot-name{font-family:var(--kw-fd);font-size:26px;font-weight:300;color:var(--kw-cream);letter-spacing:.06em}
+
+.kw-foot-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.25em;color:var(--kw-gold);margin-bottom:12px}
+
+.kw-foot-brand p{font-size:13px;color:var(--kw-stone);line-height:1.75;max-width:260px}
+
+.kw-foot-h{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--kw-mist);margin-bottom:16px}
+
+.kw-foot-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+
+.kw-foot-links a{font-size:13px;color:var(--kw-stone);transition:color .2s}
+
+.kw-foot-links a:hover{color:var(--kw-cream)}
+
+.kw-foot-bot{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid rgba(255,255,255,.04);font-size:11px;color:var(--kw-stone)}
+
+.kw-foot-soc{display:flex;gap:20px}
+
+.kw-foot-soc a{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-stone);transition:color .2s}
+
+.kw-foot-soc a:hover{color:var(--kw-gold)}
+
+@media(max-width:1080px){.kw-foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+
+@media(max-width:768px){
+
+  #kw-nav{padding:0 20px}
+
+  .kw-navl{display:none}
+
+  .kw-hbg{display:flex}
+
+  .kw-foot{padding:48px 24px 28px}
+
+  .kw-foot-top{grid-template-columns:1fr;gap:28px}
+
+  .kw-foot-bot{flex-direction:column;gap:12px;text-align:center}
+
+  .kw-foot-soc{justify-content:center}
+
+}
+
+
+
+@keyframes kw-kb{0%{transform:scale(1)}100%{transform:scale(1.06)}}
+
+@keyframes kw-pin-pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,169,110,.6)}50%{box-shadow:0 0 0 8px rgba(201,169,110,0)}}
+
+@keyframes kw-fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+
+
+/* HERO */
+
+.kw-hero-simple{padding-top:68px;background:var(--kw-ink3)}
+
+.kw-hero-strip{max-width:var(--kw-max);margin:0 auto;padding:60px 52px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
+
+.kw-hero-copy h1{font-family:var(--kw-fd);font-size:clamp(2.4rem,5vw,4.8rem);font-weight:300;line-height:1.07;color:var(--kw-cream);animation:kw-fadeUp .8s .1s both}
+
+.kw-hero-copy h1 em{font-style:italic;color:var(--kw-gold)}
+
+.kw-hero-copy p{font-size:15px;color:var(--kw-mist);max-width:420px;line-height:1.8;margin-top:16px;animation:kw-fadeUp .8s .3s both}
+
+.kw-hero-meta{display:flex;gap:20px;flex-wrap:wrap;animation:kw-fadeUp .8s .5s both}
+
+.kw-hero-badge{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-mist);border:1px solid rgba(255,255,255,.08);padding:7px 14px;border-radius:2px}
+
+.kw-hero-badge strong{color:var(--kw-cream);font-weight:400}
+
+/* BC */
+
+.kw-bc{max-width:var(--kw-max);margin:0 auto;padding:20px 52px 0;display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--kw-stone)}
+
+.kw-bc a{color:var(--kw-gold);transition:color .2s}.kw-bc a:hover{color:var(--kw-goldl)}.kw-bc-s{opacity:.35}
+
+
+
+/* FILTER TABS */
+
+.kw-tabs-wrap{max-width:var(--kw-max);margin:0 auto;padding:36px 52px 0;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+.kw-tab{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border:1px solid rgba(255,255,255,.07);border-radius:2px;color:var(--kw-mist);cursor:pointer;background:transparent;font-family:var(--kw-fb);transition:all .2s}
+
+.kw-tab:hover,.kw-tab.kw-on{border-color:rgba(201,169,110,.4);color:var(--kw-cream);background:rgba(201,169,110,.07)}
+
+
+
+/* ── LOOKBOOK GRID ── */
+
+.kw-lk-section{padding:52px 52px 100px;max-width:var(--kw-max);margin:0 auto}
+
+.kw-lk-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:380px 380px;gap:3px;margin-bottom:3px}
+
+.kw-lk-cell{position:relative;overflow:hidden;cursor:pointer}
+
+.kw-lk-cell img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;display:block}
+
+.kw-lk-cell:hover img{transform:scale(1.05)}
+
+.kw-lk-cell::after{content:'';position:absolute;inset:0;background:rgba(13,13,12,.06);transition:background .3s}
+
+.kw-lk-cell:hover::after{background:rgba(13,13,12,.22)}
+
+.kw-lk-cell.kw-tall{grid-row:span 2}
+
+.kw-lk-cell.kw-wide{grid-column:span 2}
+
+.kw-cell-lbl{position:absolute;bottom:16px;left:16px;z-index:2;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);opacity:0;transform:translateY(5px);transition:opacity .3s,transform .3s}
+
+.kw-lk-cell:hover .kw-cell-lbl{opacity:1;transform:none}
+
+
+
+/* ── INTERACTIVE PINS ── */
+
+.kw-pin{
+
+  position:absolute;z-index:10;
+
+  width:28px;height:28px;border-radius:50%;
+
+  background:rgba(201,169,110,.92);
+
+  border:2px solid rgba(255,255,255,.9);
+
+  display:flex;align-items:center;justify-content:center;
+
+  cursor:pointer;
+
+  animation:kw-pin-pulse 2.4s ease-in-out infinite;
+
+  transition:transform .2s,background .2s;
+
+}
+
+.kw-pin:hover{transform:scale(1.25);background:var(--kw-goldl);animation:none}
+
+.kw-pin::before{content:'+';font-size:16px;color:var(--kw-ink);font-weight:500;line-height:1}
+
+
+
+/* ── PIN POPUP ── */
+
+.kw-popup{
+
+  position:absolute;z-index:20;
+
+  background:rgba(13,13,12,.96);
+
+  backdrop-filter:blur(16px);
+
+  border:1px solid rgba(201,169,110,.25);
+
+  border-radius:8px;
+
+  padding:18px 20px;
+
+  width:220px;
+
+  opacity:0;pointer-events:none;
+
+  transform:translateY(8px);
+
+  transition:opacity .25s,transform .25s;
+
+  box-shadow:0 16px 48px rgba(0,0,0,.4);
+
+}
+
+.kw-popup.kw-show{opacity:1;pointer-events:auto;transform:none}
+
+/* Position popups above pin */
+
+.kw-popup.kw-above{bottom:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(8px)}
+
+.kw-popup.kw-above.kw-show{transform:translateX(-50%) translateY(0)}
+
+.kw-popup.kw-below{top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(-8px)}
+
+.kw-popup.kw-below.kw-show{transform:translateX(-50%) translateY(0)}
+
+.kw-popup-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:7px}
+
+.kw-popup-name{font-family:var(--kw-fd);font-size:18px;font-weight:300;color:var(--kw-cream);line-height:1.2;margin-bottom:5px}
+
+.kw-popup-maker{font-size:11px;color:var(--kw-sand);margin-bottom:10px}
+
+.kw-popup-price{font-size:15px;font-weight:500;color:var(--kw-cream);margin-bottom:14px}
+
+.kw-popup-cta{
+
+  display:block;text-align:center;
+
+  background:var(--kw-gold);color:var(--kw-ink);
+
+  font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+
+  padding:9px;border-radius:2px;
+
+  transition:background .2s;
+
+}
+
+.kw-popup-cta:hover{background:var(--kw-goldl)}
+
+.kw-popup-close{
+
+  position:absolute;top:10px;right:12px;
+
+  font-size:16px;color:var(--kw-sand);cursor:pointer;
+
+  line-height:1;transition:color .2s;background:none;border:none;
+
+}
+
+.kw-popup-close:hover{color:var(--kw-cream)}
+
+/* Arrow */
+
+.kw-popup::before{
+
+  content:'';position:absolute;width:10px;height:10px;
+
+  background:rgba(13,13,12,.96);
+
+  border-left:1px solid rgba(201,169,110,.25);
+
+  border-bottom:1px solid rgba(201,169,110,.25);
+
+  bottom:-6px;left:50%;transform:translateX(-50%) rotate(-45deg);
+
+}
+
+.kw-popup.kw-below::before{top:-6px;bottom:auto;transform:translateX(-50%) rotate(135deg);border-left:none;border-bottom:none;border-top:1px solid rgba(201,169,110,.25);border-right:1px solid rgba(201,169,110,.25)}
+
+
+
+/* SECOND ROW GRID */
+
+.kw-lk-grid-2{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:380px;gap:3px;margin-bottom:72px}
+
+
+
+/* FEATURED PIECES */
+
+.kw-pieces{padding:0 0 100px}
+
+.kw-pieces-h{text-align:center;margin-bottom:52px}
+
+.kw-pieces-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+
+.kw-piece{border:1px solid rgba(255,255,255,.06);border-radius:6px;overflow:hidden;cursor:pointer;transition:border-color .25s;background:var(--kw-ink3)}
+
+.kw-piece:hover{border-color:rgba(201,169,110,.25)}
+
+.kw-piece-img{aspect-ratio:1;overflow:hidden}
+
+.kw-piece-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+
+.kw-piece:hover .kw-piece-img img{transform:scale(1.04)}
+
+.kw-piece-body{padding:16px}
+
+.kw-piece-cat{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:6px}
+
+.kw-piece-name{font-family:var(--kw-fd);font-size:18px;font-weight:300;color:var(--kw-cream);line-height:1.25;margin-bottom:5px}
+
+.kw-piece-maker{font-size:11px;color:var(--kw-sand);margin-bottom:10px}
+
+.kw-piece-price{font-size:14px;font-weight:500;color:var(--kw-cream);margin-bottom:12px}
+
+.kw-piece-btn{display:block;text-align:center;border:1px solid rgba(201,169,110,.3);color:var(--kw-gold);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:8px;border-radius:2px;transition:all .2s}
+
+.kw-piece:hover .kw-piece-btn{background:var(--kw-gold);color:var(--kw-ink)}
+
+
+
+/* NL BAND */
+
+.kw-nl-band{background:var(--kw-ink3);padding:72px 52px;text-align:center;position:relative;overflow:hidden}
+
+.kw-nl-band::before{content:'看';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:var(--kw-fj);font-size:300px;font-weight:200;color:rgba(201,169,110,.04);line-height:1;pointer-events:none}
+
+.kw-nl-inner{max-width:520px;margin:0 auto;position:relative}
+
+.kw-nl-title{font-family:var(--kw-fd);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;color:var(--kw-cream);line-height:1.2;margin-bottom:12px}
+
+.kw-nl-title em{font-style:italic;color:var(--kw-gold)}
+
+.kw-nl-sub{font-size:14px;color:var(--kw-mist);line-height:1.75;margin-bottom:28px}
+
+.kw-nl-form{display:flex;max-width:400px;margin:0 auto}
+
+.kw-nl-form input{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-right:none;border-radius:2px 0 0 2px;padding:13px 18px;font-family:var(--kw-fb);font-size:13px;color:var(--kw-cream);outline:none}
+
+.kw-nl-form input::placeholder{color:var(--kw-stone)}
+
+.kw-nl-form input:focus{border-color:rgba(201,169,110,.4)}
+
+.kw-nl-form button{background:var(--kw-gold);color:var(--kw-ink);border:none;padding:13px 20px;font-family:var(--kw-fb);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border-radius:0 2px 2px 0;cursor:pointer;transition:background .2s;white-space:nowrap}
+
+.kw-nl-form button:hover{background:var(--kw-goldl)}
+
+
+
+@media(max-width:1080px){.kw-lk-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.kw-lk-cell.kw-tall{grid-row:span 1}.kw-lk-cell.kw-wide{grid-column:span 2}.kw-lk-grid-2{grid-template-columns:1fr 1fr}.kw-pieces-grid{grid-template-columns:1fr 1fr}.kw-hero-strip{flex-direction:column;align-items:flex-start;padding:48px 32px}}
+
+@media(max-width:768px){.kw-bc,.kw-tabs-wrap,.kw-lk-section{padding-left:20px;padding-right:20px}.kw-lk-grid{grid-template-columns:1fr;grid-template-rows:auto}.kw-lk-cell.kw-wide{grid-column:span 1}.kw-lk-grid-2{grid-template-columns:1fr}.kw-pieces-grid{grid-template-columns:1fr}.kw-nl-band{padding:60px 20px}.kw-nl-form{flex-direction:column}.kw-nl-form input{border-right:1px solid rgba(255,255,255,.1);border-radius:2px 2px 0 0}.kw-nl-form button{border-radius:0 0 2px 2px}}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="kw-pgbar"></div>
+
+<nav id="kw-nav">
+
+  <a href="index.html" class="kw-logo" aria-label="KuroWabi home">
+
+    <span class="kw-logo-en">KuroWabi</span>
+
+    <span class="kw-logo-jp">黒侘び — Dark Japandi</span>
+
+  </a>
+
+  <ul class="kw-navl" role="navigation" aria-label="Main navigation">
+
+    <li><a href="/bedrooms/">Rooms</a></li>
+
+    <li><a href="lookbook.html" class="kw-on">Lookbook</a></li>
+
+    <li><a href="index.html#guide">The Style</a></li>
+
+    <li><a href="articles.html">Articles</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="index.html#newsletter" class="kw-cta">Free Guide</a></li>
+
+  </ul>
+
+  <button class="kw-hbg" onclick="document.getElementById('kw-mob').classList.toggle('kw-open')" aria-label="Menu">
+
+    <span></span><span></span><span></span>
+
+  </button>
+
+</nav>
+
+<div class="kw-mob" id="kw-mob" role="dialog" aria-label="Mobile menu">
+
+  <button class="kw-mob-x" onclick="document.getElementById('kw-mob').classList.remove('kw-open')" aria-label="Close menu">✕</button>
+
+  <a href="index.html">Home</a>
+
+  <a href="/bedrooms/">Rooms</a>
+
+  <a href="lookbook.html">Lookbook</a>
+
+  <a href="articles.html">Articles</a>
+
+  <a href="about.html">About</a>
+
+  <a href="index.html#newsletter">Free Guide</a>
+
+</div>
+
+
+
+<div class="kw-hero-simple">
+
+  <div class="kw-bc" style="padding-top:88px"><a href="index.html">Home</a><span class="kw-bc-s">/</span>Lookbook</div>
+
+  <div class="kw-hero-strip">
+
+    <div class="kw-hero-copy">
+
+      <div class="kw-eyebrow">Visual Meditations</div>
+
+      <h1>Shop the <em>look</em></h1>
+
+      <p>Hover over the glowing pins to explore curated pieces. Every product is selected for its material honesty, wabi-sabi quality, and place in a Dark Japandi space.</p>
+
+    </div>
+
+    <div class="kw-hero-meta">
+
+      <div class="kw-hero-badge"><strong>5</strong>&nbsp; Curated Rooms</div>
+
+      <div class="kw-hero-badge"><strong>18</strong>&nbsp; Shoppable Pieces</div>
+
+      <div class="kw-hero-badge">Affiliate links &nbsp;—&nbsp; we earn a small commission at no cost to you</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- FILTER TABS -->
+
+<div class="kw-tabs-wrap kw-rv">
+
+  <button class="kw-tab kw-on" onclick="filterLook(this,'all')">All Rooms</button>
+
+  <button class="kw-tab" onclick="filterLook(this,'lounge')">Lounge</button>
+
+  <button class="kw-tab" onclick="filterLook(this,'bedroom')">Bedroom</button>
+
+  <button class="kw-tab" onclick="filterLook(this,'bath')">Bath</button>
+
+  <button class="kw-tab" onclick="filterLook(this,'dining')">Dining</button>
+
+  <button class="kw-tab" onclick="filterLook(this,'objects')">Objects Only</button>
+
+</div>
+
+
+
+<!-- ── LOOKBOOK GRID 1 — Lounge ── -->
+
+<div class="kw-lk-section">
+
+  <p style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:20px">Room 01 — The Lounge Loft</p>
+
+
+
+  <div class="kw-lk-grid kw-rv kw-d1">
+
+
+
+    <!-- Cell 1: tall — lounge seating corner -->
+
+    <div class="kw-lk-cell kw-tall" id="cell-lounge" data-room="lounge">
+
+      <img src="https://kurowabi.com/images/lk_1.jpg" alt="Dark Japandi lounge seating corner with rattan chair and brass floor lamp" loading="lazy">
+
+      <div class="kw-cell-lbl">Lounge Seating Corner</div>
+
+
+
+      <!-- PIN 1: Rattan Chair -->
+
+      <div class="kw-pin" style="top:38%;left:22%" data-popup="popup-rattan" tabindex="0" role="button" aria-label="Shop: Rattan Accent Chair"></div>
+
+      <div class="kw-popup kw-above" id="popup-rattan">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-rattan')">✕</button>
+
+        <div class="kw-popup-tag">Seating</div>
+
+        <div class="kw-popup-name">Wabi Rattan Accent Chair</div>
+
+        <div class="kw-popup-maker">by Ethnicraft</div>
+
+        <div class="kw-popup-price">£ 685</div>
+
+        <a href="https://www.ethnicraft.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <!-- PIN 2: Floor Lamp -->
+
+      <div class="kw-pin" style="top:28%;left:68%" data-popup="popup-lamp1" tabindex="0" role="button" aria-label="Shop: Brass Floor Lamp"></div>
+
+      <div class="kw-popup kw-above" id="popup-lamp1">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-lamp1')">✕</button>
+
+        <div class="kw-popup-tag">Lighting</div>
+
+        <div class="kw-popup-name">Solis Brass Arc Floor Lamp</div>
+
+        <div class="kw-popup-maker">by Hem</div>
+
+        <div class="kw-popup-price">£ 520</div>
+
+        <a href="https://hem.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Cell 2: wabi lowboard -->
+
+    <div class="kw-lk-cell" data-room="lounge">
+
+      <img src="https://kurowabi.com/images/lk_2.jpg" alt="Dark Japandi wabi-sabi low sideboard in oiled oak with ceramics" loading="lazy">
+
+      <div class="kw-cell-lbl">Wabi Lowboard</div>
+
+
+
+      <!-- PIN 3: Lowboard -->
+
+      <div class="kw-pin" style="top:55%;left:40%" data-popup="popup-lowboard" tabindex="0" role="button" aria-label="Shop: Oiled Oak Lowboard"></div>
+
+      <div class="kw-popup kw-above" id="popup-lowboard">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-lowboard')">✕</button>
+
+        <div class="kw-popup-tag">Furniture</div>
+
+        <div class="kw-popup-name">Kumo Low Sideboard — Oiled Oak</div>
+
+        <div class="kw-popup-maker">by Moebe</div>
+
+        <div class="kw-popup-price">£ 1,240</div>
+
+        <a href="https://moebe.dk" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <!-- PIN 4: Ceramics -->
+
+      <div class="kw-pin" style="top:30%;left:70%" data-popup="popup-vase1" tabindex="0" role="button" aria-label="Shop: Unglazed Clay Vase"></div>
+
+      <div class="kw-popup kw-above" id="popup-vase1">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-vase1')">✕</button>
+
+        <div class="kw-popup-tag">Ceramics</div>
+
+        <div class="kw-popup-name">Unglazed Kintsugi Vase</div>
+
+        <div class="kw-popup-maker">by Ferm Living</div>
+
+        <div class="kw-popup-price">£ 88</div>
+
+        <a href="https://fermliving.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Cell 3: ceramics -->
+
+    <div class="kw-lk-cell" data-room="objects">
+
+      <img src="https://kurowabi.com/images/hero_2.jpg" alt="Wabi-sabi unglazed ceramics and dried botanics on dark shelf" loading="lazy">
+
+      <div class="kw-cell-lbl">Ceramics Study</div>
+
+
+
+      <!-- PIN 5: Dried botanics -->
+
+      <div class="kw-pin" style="top:35%;left:30%" data-popup="popup-botanics" tabindex="0" role="button" aria-label="Shop: Dried Botanical Bundle"></div>
+
+      <div class="kw-popup kw-below" id="popup-botanics">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-botanics')">✕</button>
+
+        <div class="kw-popup-tag">Botanics</div>
+
+        <div class="kw-popup-name">Dried Pampas &amp; Sorghum Bundle</div>
+
+        <div class="kw-popup-maker">by Terrain</div>
+
+        <div class="kw-popup-price">£ 44</div>
+
+        <a href="https://shopterrain.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Cell 4: wide — dark lounge overview -->
+
+    <div class="kw-lk-cell kw-wide" data-room="lounge">
+
+      <img src="https://kurowabi.com/images/hero_4.jpg" alt="Complete Dark Japandi lounge room with sofa, pendant lighting, and wabi-sabi objects" loading="lazy">
+
+      <div class="kw-cell-lbl">Dark Lounge Overview</div>
+
+
+
+      <!-- PIN 6: sofa -->
+
+      <div class="kw-pin" style="top:60%;left:30%" data-popup="popup-sofa" tabindex="0" role="button" aria-label="Shop: Dark Linen Sofa"></div>
+
+      <div class="kw-popup kw-above" id="popup-sofa">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-sofa')">✕</button>
+
+        <div class="kw-popup-tag">Sofa</div>
+
+        <div class="kw-popup-name">Kuro Linen 3-Seater — Slate</div>
+
+        <div class="kw-popup-maker">by Muuto</div>
+
+        <div class="kw-popup-price">£ 3,200</div>
+
+        <a href="https://muuto.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <!-- PIN 7: pendant -->
+
+      <div class="kw-pin" style="top:20%;left:52%" data-popup="popup-pendant" tabindex="0" role="button" aria-label="Shop: Washi Paper Pendant"></div>
+
+      <div class="kw-popup kw-below" id="popup-pendant">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-pendant')">✕</button>
+
+        <div class="kw-popup-tag">Lighting</div>
+
+        <div class="kw-popup-name">Washi Paper Pendant — Dark Walnut</div>
+
+        <div class="kw-popup-maker">by Muuto</div>
+
+        <div class="kw-popup-price">£ 310</div>
+
+        <a href="https://muuto.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ROOM 02 — BATH -->
+
+  <p style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:20px">Room 02 — The Shadow Bath Sanctuary</p>
+
+  <div class="kw-lk-grid-2 kw-rv kw-d2">
+
+    <div class="kw-lk-cell" data-room="bath">
+
+      <img src="https://kurowabi.com/images/feat_side_1.jpg" alt="Dark Japandi stone washbasin with gold taps and unglazed ceramic soap dish" loading="lazy">
+
+      <div class="kw-cell-lbl">Stone Washbasin Corner</div>
+
+
+
+      <div class="kw-pin" style="top:45%;left:38%" data-popup="popup-basin" tabindex="0" role="button" aria-label="Shop: Stone Basin"></div>
+
+      <div class="kw-popup kw-above" id="popup-basin">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-basin')">✕</button>
+
+        <div class="kw-popup-tag">Bathroom</div>
+
+        <div class="kw-popup-name">Onyx Stone Round Basin</div>
+
+        <div class="kw-popup-maker">by Agape</div>
+
+        <div class="kw-popup-price">£ 1,850</div>
+
+        <a href="https://agapedesign.it" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <div class="kw-pin" style="top:28%;left:62%" data-popup="popup-taps" tabindex="0" role="button" aria-label="Shop: Brass Taps"></div>
+
+      <div class="kw-popup kw-above" id="popup-taps">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-taps')">✕</button>
+
+        <div class="kw-popup-tag">Hardware</div>
+
+        <div class="kw-popup-name">Patinated Brass Wall Tap Set</div>
+
+        <div class="kw-popup-maker">by Vola</div>
+
+        <div class="kw-popup-price">£ 620</div>
+
+        <a href="https://vola.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="kw-lk-cell" data-room="bath">
+
+      <img src="https://kurowabi.com/images/feat_side_2.jpg" alt="Dark Japandi tatami room with low table, linen cushions and rice paper lantern" loading="lazy">
+
+      <div class="kw-cell-lbl">Ashen Tatami Room</div>
+
+
+
+      <div class="kw-pin" style="top:55%;left:44%" data-popup="popup-cushion" tabindex="0" role="button" aria-label="Shop: Linen Floor Cushion"></div>
+
+      <div class="kw-popup kw-above" id="popup-cushion">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-cushion')">✕</button>
+
+        <div class="kw-popup-tag">Textiles</div>
+
+        <div class="kw-popup-name">Stone-washed Linen Floor Cushion</div>
+
+        <div class="kw-popup-maker">by Linen Tales</div>
+
+        <div class="kw-popup-price">£ 95</div>
+
+        <a href="https://linentales.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <div class="kw-pin" style="top:22%;left:55%" data-popup="popup-lantern" tabindex="0" role="button" aria-label="Shop: Rice Paper Lantern"></div>
+
+      <div class="kw-popup kw-below" id="popup-lantern">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-lantern')">✕</button>
+
+        <div class="kw-popup-tag">Lighting</div>
+
+        <div class="kw-popup-name">Washi Rice Paper Lantern — Charcoal</div>
+
+        <div class="kw-popup-maker">by Menu</div>
+
+        <div class="kw-popup-price">£ 145</div>
+
+        <a href="https://menudesign.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="kw-lk-cell" data-room="bedroom">
+
+      <img src="https://kurowabi.com/images/cat_bedroom.jpg" alt="Dark Japandi bedroom with low platform bed, amber pendant and linen bedding" loading="lazy">
+
+      <div class="kw-cell-lbl">Bedroom Sanctuary</div>
+
+
+
+      <div class="kw-pin" style="top:58%;left:35%" data-popup="popup-bedframe" tabindex="0" role="button" aria-label="Shop: Platform Bed Frame"></div>
+
+      <div class="kw-popup kw-above" id="popup-bedframe">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-bedframe')">✕</button>
+
+        <div class="kw-popup-tag">Furniture</div>
+
+        <div class="kw-popup-name">Kumo Platform Bed — Raw Oak</div>
+
+        <div class="kw-popup-maker">by Ethnicraft</div>
+
+        <div class="kw-popup-price">From £ 890</div>
+
+        <a href="https://www.ethnicraft.com" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+
+
+      <div class="kw-pin" style="top:28%;left:62%" data-popup="popup-linen" tabindex="0" role="button" aria-label="Shop: Dark Linen Bedding"></div>
+
+      <div class="kw-popup kw-below" id="popup-linen">
+
+        <button class="kw-popup-close" onclick="closePopup('popup-linen')">✕</button>
+
+        <div class="kw-popup-tag">Textiles</div>
+
+        <div class="kw-popup-name">Wabi Linen Duvet Set — Charcoal</div>
+
+        <div class="kw-popup-maker">by Cultiver</div>
+
+        <div class="kw-popup-price">From £ 220</div>
+
+        <a href="https://cultiver.co.uk" target="_blank" rel="noopener sponsored" class="kw-popup-cta">Shop This Piece →</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- FEATURED PIECES -->
+
+  <div class="kw-pieces">
+
+    <div class="kw-pieces-h kw-rv">
+
+      <div class="kw-eyebrow">All Curated Pieces</div>
+
+      <h2 class="kw-section-title">Shop by <em>category</em></h2>
+
+    </div>
+
+    <div class="kw-pieces-grid kw-rv kw-d1">
+
+      <div class="kw-piece"><div class="kw-piece-img"><img src="https://kurowabi.com/images/lk_1.jpg" alt="Rattan Chair"></div><div class="kw-piece-body"><div class="kw-piece-cat">Seating</div><div class="kw-piece-name">Wabi Rattan Accent Chair</div><div class="kw-piece-maker">Ethnicraft</div><div class="kw-piece-price">£685</div><a href="https://www.ethnicraft.com" target="_blank" rel="noopener sponsored" class="kw-piece-btn">View Piece →</a></div></div>
+
+      <div class="kw-piece"><div class="kw-piece-img"><img src="https://kurowabi.com/images/lk_2.jpg" alt="Lowboard"></div><div class="kw-piece-body"><div class="kw-piece-cat">Furniture</div><div class="kw-piece-name">Kumo Low Sideboard — Oiled Oak</div><div class="kw-piece-maker">Moebe</div><div class="kw-piece-price">£1,240</div><a href="https://moebe.dk" target="_blank" rel="noopener sponsored" class="kw-piece-btn">View Piece →</a></div></div>
+
+      <div class="kw-piece"><div class="kw-piece-img"><img src="https://kurowabi.com/images/hero_2.jpg" alt="Ceramics"></div><div class="kw-piece-body"><div class="kw-piece-cat">Ceramics</div><div class="kw-piece-name">Unglazed Kintsugi Vase</div><div class="kw-piece-maker">Ferm Living</div><div class="kw-piece-price">£88</div><a href="https://fermliving.com" target="_blank" rel="noopener sponsored" class="kw-piece-btn">View Piece →</a></div></div>
+
+      <div class="kw-piece"><div class="kw-piece-img"><img src="https://kurowabi.com/images/feat_side_1.jpg" alt="Bath"></div><div class="kw-piece-body"><div class="kw-piece-cat">Lighting</div><div class="kw-piece-name">Washi Pendant — Dark Walnut</div><div class="kw-piece-maker">Muuto</div><div class="kw-piece-price">£310</div><a href="https://muuto.com" target="_blank" rel="noopener sponsored" class="kw-piece-btn">View Piece →</a></div></div>
+
+    </div>
+
+  </div>
+
+
+
+</div><!-- /kw-lk-section -->
+
+
+
+<!-- NL BAND -->
+
+<div class="kw-nl-band">
+
+  <div class="kw-nl-inner kw-rv">
+
+    <div class="kw-eyebrow">Free Resource</div>
+
+    <h2 class="kw-nl-title"><em>Shadow &amp; Sanctuary</em> — 120-page Guide</h2>
+
+    <p class="kw-nl-sub">Our complete Dark Japandi PDF — palette systems, room layouts, material pairings, and lighting plans. Free.</p>
+
+    <form class="kw-nl-form" onsubmit="kwNLSub(event)">
+
+      <input type="email" placeholder="your@email.com" required>
+
+      <button type="submit">Get Free Guide</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+
+<footer class="kw-foot">
+
+  <div class="kw-foot-i">
+
+    <div class="kw-foot-top">
+
+      <div class="kw-foot-brand">
+
+        <div class="kw-foot-name">KuroWabi</div>
+
+        <div class="kw-foot-jp">黒侘び — Dark Japandi Studio</div>
+
+        <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+
+      </div>
+
+      <div><div class="kw-foot-h">Rooms</div><ul class="kw-foot-links"><li><a href="/bedrooms/">Bedrooms</a></li><li><a href="#">Lounge Spaces</a></li><li><a href="#">Dining &amp; Kitchens</a></li><li><a href="#">Sanctuary Baths</a></li></ul></div>
+
+      <div><div class="kw-foot-h">Design</div><ul class="kw-foot-links"><li><a href="index.html#guide">The Philosophy</a></li><li><a href="shou-sugi-ban.html">Shou Sugi Ban</a></li><li><a href="lookbook.html">Shop Lookbook</a></li><li><a href="articles.html">All Articles</a></li></ul></div>
+
+      <div><div class="kw-foot-h">Studio</div><ul class="kw-foot-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+
+    </div>
+
+    <div class="kw-foot-bot">
+
+      <span>© 2026 KuroWabi Studio. All rights reserved. Made with intention.</span>
+
+      <div class="kw-foot-soc">
+
+        <a href="https://www.instagram.com/kurowabi.studio/" target="_blank" rel="noopener" aria-label="KuroWabi on Instagram">Instagram</a>
+
+        <a href="https://www.pinterest.com/kurowabi/" target="_blank" rel="noopener" aria-label="KuroWabi on Pinterest">Pinterest</a>
+
+        <a href="https://www.youtube.com/@kurowabi" target="_blank" rel="noopener" aria-label="KuroWabi on YouTube">YouTube</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+
+
+  const _pg=document.getElementById('kw-pgbar');
+
+  if(_pg)window.addEventListener('scroll',()=>{const d=document.documentElement;_pg.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'});
+
+  const _ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('kw-in');_ro.unobserve(e.target)}}),{threshold:.08});
+
+  document.querySelectorAll('.kw-rv').forEach(el=>_ro.observe(el));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}},));
+
+
+
+
+
+// ── INTERACTIVE PINS ──
+
+function openPopup(id) {
+
+  closeAll();
+
+  const p = document.getElementById(id);
+
+  if (p) p.classList.add('kw-show');
+
+}
+
+function closePopup(id) {
+
+  const p = document.getElementById(id);
+
+  if (p) p.classList.remove('kw-show');
+
+}
+
+function closeAll() {
+
+  document.querySelectorAll('.kw-popup').forEach(p => p.classList.remove('kw-show'));
+
+}
+
+
+
+// Wire up pins
+
+document.querySelectorAll('.kw-pin').forEach(pin => {
+
+  const id = pin.dataset.popup;
+
+  pin.addEventListener('click', e => { e.stopPropagation(); openPopup(id); });
+
+  pin.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPopup(id); } });
+
+});
+
+document.addEventListener('click', closeAll);
+
+document.querySelectorAll('.kw-popup').forEach(p => p.addEventListener('click', e => e.stopPropagation()));
+
+
+
+// ── FILTER ──
+
+function filterLook(btn, cat) {
+
+  document.querySelectorAll('.kw-tab').forEach(b => b.classList.remove('kw-on'));
+
+  btn.classList.add('kw-on');
+
+  document.querySelectorAll('.kw-lk-cell').forEach(cell => {
+
+    const room = cell.dataset.room || '';
+
+    cell.style.opacity = (cat === 'all' || room === cat) ? '1' : '0.25';
+
+    cell.style.filter  = (cat === 'all' || room === cat) ? 'none' : 'grayscale(0.8)';
+
+  });
+
+}
+
+
+
+function kwNLSub(e) {
+
+  e.preventDefault();
+
+  const btn = e.target.querySelector('button');
+
+  btn.textContent = '✓ Guide sent!'; btn.style.background = '#4a5240';
+
+  setTimeout(() => { btn.textContent = 'Get Free Guide'; btn.style.background = ''; e.target.reset(); }, 3000);
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,184 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — KuroWabi</title>
-  <meta name="description" content="Read our UK GDPR-compliant Privacy Policy to understand how we collect, use, and protect your personal details on KuroWabi.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="legal.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Privacy Policy — KuroWabi</title>
+<meta name="description" content="Privacy policy and data protection terms for KuroWabi Studio website users.">
+<link rel="canonical" href="https://kurowabi.com/privacy.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+
+/* ── KuroWabi shared CSS ── */
+:root{
+  --kw-ink:#0d0d0c;--kw-ink2:#131210;--kw-ink3:#1a1917;
+  --kw-stone:#4a4744;--kw-sand:#7a7570;--kw-mist:#b0aa9f;
+  --kw-cream:#f4f0e8;--kw-gold:#c9a96e;--kw-goldl:#e2c99a;
+  --kw-fd:'Cormorant Garamond',Georgia,serif;
+  --kw-fj:'Noto Serif JP',serif;
+  --kw-fb:'DM Sans',system-ui,sans-serif;
+  --kw-max:1280px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--kw-fb);background:var(--kw-ink);color:var(--kw-cream);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block;object-fit:cover}
+a{color:inherit;text-decoration:none}
+#kw-pgbar{position:fixed;top:0;left:0;height:2px;background:var(--kw-gold);z-index:300;width:0;transition:width .12s linear;pointer-events:none}
+#kw-nav{position:fixed;inset:0 0 auto;height:68px;padding:0 52px;display:flex;align-items:center;justify-content:space-between;z-index:200;background:rgba(13,13,12,.97);backdrop-filter:blur(24px);border-bottom:1px solid rgba(201,169,110,.1)}
+.kw-logo{display:flex;flex-direction:column;gap:2px;line-height:1}
+.kw-logo-en{font-family:var(--kw-fd);font-size:22px;font-weight:400;letter-spacing:.08em;color:var(--kw-cream)}
+.kw-logo-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.22em;color:var(--kw-gold)}
+.kw-navl{display:flex;align-items:center;gap:32px;list-style:none}
+.kw-navl a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--kw-mist);transition:color .2s}
+.kw-navl a:hover,.kw-navl a.kw-on{color:var(--kw-cream)}
+.kw-cta{background:var(--kw-gold)!important;color:var(--kw-ink)!important;padding:8px 20px;border-radius:2px}
+.kw-cta:hover{background:var(--kw-goldl)!important}
+.kw-hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.kw-hbg span{width:24px;height:1.5px;background:var(--kw-cream);display:block}
+.kw-mob{display:none;position:fixed;inset:0;background:var(--kw-ink3);z-index:199;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+.kw-mob.kw-open{display:flex}
+.kw-mob a{font-family:var(--kw-fd);font-size:32px;font-weight:300;color:var(--kw-cream);letter-spacing:.05em;transition:color .2s}
+.kw-mob a:hover{color:var(--kw-gold)}
+.kw-mob-x{position:absolute;top:24px;right:28px;font-size:24px;color:var(--kw-mist);cursor:pointer;background:none;border:none}
+.kw-rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.kw-rv.kw-in{opacity:1;transform:none}
+.kw-d1{transition-delay:.1s}.kw-d2{transition-delay:.2s}.kw-d3{transition-delay:.3s}
+.kw-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--kw-gold);margin-bottom:16px}
+.kw-eyebrow::before,.kw-eyebrow::after{content:'';width:22px;height:1px;background:currentColor;opacity:.5}
+.kw-section-title{font-family:var(--kw-fd);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;color:var(--kw-cream);line-height:1.15}
+.kw-section-title em{font-style:italic;color:var(--kw-gold)}
+.kw-section-sub{font-size:15px;color:var(--kw-mist);max-width:520px;margin:14px auto 0;line-height:1.78}
+.kw-foot{padding:72px 52px 36px;background:#080807;border-top:1px solid rgba(255,255,255,.04)}
+.kw-foot-i{max-width:var(--kw-max);margin:0 auto}
+.kw-foot-top{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:56px;margin-bottom:48px}
+.kw-foot-name{font-family:var(--kw-fd);font-size:26px;font-weight:300;color:var(--kw-cream);letter-spacing:.06em}
+.kw-foot-jp{font-family:var(--kw-fj);font-size:9px;font-weight:200;letter-spacing:.25em;color:var(--kw-gold);margin-bottom:12px}
+.kw-foot-brand p{font-size:13px;color:var(--kw-stone);line-height:1.75;max-width:260px}
+.kw-foot-h{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--kw-mist);margin-bottom:16px}
+.kw-foot-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.kw-foot-links a{font-size:13px;color:var(--kw-stone);transition:color .2s}
+.kw-foot-links a:hover{color:var(--kw-cream)}
+.kw-foot-bot{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid rgba(255,255,255,.04);font-size:11px;color:var(--kw-stone)}
+.kw-foot-soc{display:flex;gap:20px}
+.kw-foot-soc a{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--kw-stone);transition:color .2s}
+.kw-foot-soc a:hover{color:var(--kw-gold)}
+@media(max-width:1080px){.kw-foot-top{grid-template-columns:1fr 1fr;gap:36px}}
+@media(max-width:768px){
+  #kw-nav{padding:0 20px}
+  .kw-navl{display:none}
+  .kw-hbg{display:flex}
+  .kw-foot{padding:48px 24px 28px}
+  .kw-foot-top{grid-template-columns:1fr;gap:28px}
+  .kw-foot-bot{flex-direction:column;gap:12px;text-align:center}
+  .kw-foot-soc{justify-content:center}
+}
+
+.kw-legal-hero{padding-top:68px;background:var(--kw-ink3);border-bottom:1px solid rgba(255,255,255,.04)}
+.kw-legal-hero-inner{max-width:var(--kw-max);margin:0 auto;padding:64px 52px}
+.kw-legal-layout{max-width:800px;margin:0 auto;padding:64px 52px 100px}
+.kw-legal-prose h2{font-family:var(--kw-fd);font-size:22px;font-weight:300;color:var(--kw-cream);margin:40px 0 16px;border-bottom:1px solid rgba(255,255,255,.05);padding-bottom:8px}
+.kw-legal-prose p{font-size:14px;color:var(--kw-mist);line-height:1.8;margin-bottom:18px}
+.kw-legal-prose ul{margin-bottom:20px;padding-left:20px}
+.kw-legal-prose li{font-size:14px;color:var(--kw-mist);margin-bottom:8px}
+
+@media(max-width:768px){.kw-legal-hero-inner,.kw-legal-layout{padding-left:20px;padding-right:20px}}
+</style>
 </head>
 <body>
+<div id="kw-pgbar"></div>
+<nav id="kw-nav">
+  <a href="index.html" class="kw-logo" aria-label="KuroWabi home">
+    <span class="kw-logo-en">KuroWabi</span>
+    <span class="kw-logo-jp">黒侘び — Dark Japandi</span>
+  </a>
+  <ul class="kw-navl" role="navigation" aria-label="Main navigation">
+    <li><a href="/bedrooms/">Rooms</a></li>
+    <li><a href="lookbook.html" class="">Lookbook</a></li>
+    <li><a href="index.html#guide">The Style</a></li>
+    <li><a href="articles.html" class="">Articles</a></li>
+    <li><a href="about.html" class="">About</a></li>
+    <li><a href="contact.html" class="kw-cta">Connect</a></li>
+  </ul>
+  <button class="kw-hbg" onclick="document.getElementById('kw-mob').classList.toggle('kw-open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="kw-mob" id="kw-mob" role="dialog" aria-label="Mobile menu">
+  <button class="kw-mob-x" onclick="document.getElementById('kw-mob').classList.remove('kw-open')" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="/bedrooms/">Rooms</a>
+  <a href="lookbook.html">Lookbook</a>
+  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Connect</a>
+</div>
 
-  <div id="pgbar"></div>
+<div class="kw-legal-hero">
+  <div class="kw-bc" style="padding-top:88px"><a href="index.html">Home</a><span class="kw-bc-s">/</span>Privacy</div>
+  <div class="kw-legal-hero-inner">
+    <h1 class="kw-section-title">Privacy <em>Policy</em></h1>
+    <p style="font-size:12px;color:var(--kw-sand);margin-top:10px">Last updated: July 18, 2026</p>
+  </div>
+</div>
 
-  <!-- NAVIGATION HEADER -->
-  <header id="nav">
-    <a href="index.html" class="logo" aria-label="KuroWabi Home">
-      <span class="en">KuroWabi</span>
-      <span class="jp">黒侘び — Dark Japandi</span>
-    </a>
-    <ul class="nl">
-      <li><a href="/bedrooms/">Rooms</a></li>
-      <li><a href="index.html#guide">The Style</a></li>
-      <li><a href="index.html#lookbook">Lookbook</a></li>
-      <li><a href="index.html#articles">Articles</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="cta">Connect</a></li>
+<div class="kw-legal-layout">
+  <div class="kw-legal-prose kw-rv kw-d1">
+    <h2>1. Information We Collect</h2>
+    <p>We respect your privacy and are committed to protecting it. We collect personal data when you voluntarily sign up for our newsletter or submit a contact inquiry on this website. This includes:</p>
+    <ul>
+      <li>Your email address</li>
+      <li>Your name (when submitted via forms)</li>
+      <li>Message details or collaboration concepts</li>
     </ul>
-    <div class="hbg" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+
+    <h2>2. How We Use Your Data</h2>
+    <p>Your details are processed to send you the requested PDF guides, studio updates, newsletters, or to answer your specific service inquiries. We do not sell, rent, or share your personal data with third-party marketers.</p>
+
+    <h2>3. Cookies and Analytics</h2>
+    <p>We use essential cookies to maintain page layouts and minimal, privacy-centric analytics to trace site performance. None of this data is used to personally identify you or build advertising profiles.</p>
+
+    <h2>4. Contact Us</h2>
+    <p>If you have any questions or would like to request that your personal information be removed from our database, please contact us at <strong>studio@kurowabi.com</strong>.</p>
+  </div>
+</div>
+
+<footer class="kw-foot">
+  <div class="kw-foot-i">
+    <div class="kw-foot-top">
+      <div class="kw-foot-brand">
+        <div class="kw-foot-name">KuroWabi</div>
+        <div class="kw-foot-jp">黒侘び — Dark Japandi Studio</div>
+        <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
+      </div>
+      <div><div class="kw-foot-h">Rooms</div><ul class="kw-foot-links"><li><a href="/bedrooms/">Bedrooms</a></li><li><a href="/index.html#rooms">Lounge Spaces</a></li><li><a href="/index.html#rooms">Dining &amp; Kitchens</a></li><li><a href="/index.html#rooms">Sanctuary Baths</a></li></ul></div>
+      <div><div class="kw-foot-h">Design</div><ul class="kw-foot-links"><li><a href="index.html#guide">The Philosophy</a></li><li><a href="shou-sugi-ban.html">Shou Sugi Ban</a></li><li><a href="lookbook.html">Shop Lookbook</a></li><li><a href="articles.html">All Articles</a></li></ul></div>
+      <div><div class="kw-foot-h">Studio</div><ul class="kw-foot-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
     </div>
-  </header>
-
-  <!-- MOBILE DRAWER MENU -->
-  <div class="mmenu" id="mm">
-    <span class="mclose" onclick="toggleMenu()">✕</span>
-    <a href="/bedrooms/" onclick="toggleMenu()">Rooms</a>
-    <a href="index.html#guide" onclick="toggleMenu()">The Style</a>
-    <a href="index.html#lookbook" onclick="toggleMenu()">Lookbook</a>
-    <a href="index.html#articles" onclick="toggleMenu()">Articles</a>
-    <a href="about.html" onclick="toggleMenu()">About</a>
-    <a href="contact.html" onclick="toggleMenu()">Connect</a>
-  </div>
-
-  <main>
-    <!-- LEGAL HERO -->
-    <section class="legal-hero" aria-labelledby="privacy-title">
-      <div class="legal-hero-container">
-        <span class="legal-eyebrow">Legal &amp; Transparency</span>
-        <h1 id="privacy-title">Privacy <em>Policy</em></h1>
-        <div class="legal-date">Last Updated: July 16, 2026</div>
-      </div>
-    </section>
-
-    <!-- LEGAL CONTENT -->
-    <section class="legal-content-section">
-      <div class="legal-container">
-        <h2>Introduction</h2>
-        <p>Welcome to KuroWabi (kurowabi.com). We are an independent editorial publication dedicated to Dark Japandi interior design. We value your privacy and believe in keeping our legal disclosures simple, transparent, and human. This policy explains how we collect, store, and look after your personal details in compliance with the UK General Data Protection Regulation (UK GDPR).</p>
-
-        <h2>Information We Collect</h2>
-        <p>We only collect information that is necessary to run our publication and connect with you. This falls into two categories:</p>
-        <ul>
-          <li><strong>Information you give us directly</strong>: When you subscribe to our email newsletter or fill in our contact form, we collect your name, email address, inquiry subject, and any message details you share.</li>
-          <li><strong>Information collected automatically</strong>: When you browse our site, we collect basic technical data like your IP address, browser type, approximate location, and details on how you navigate our pages. This is collected through cookies.</li>
-        </ul>
-
-        <h2>How We Use Information</h2>
-        <p>We use your information in a few simple ways, all aimed at delivering a premium design experience:</p>
-        <ul>
-          <li>To send you our design newsletters, lookbook edits, and resource downloads.</li>
-          <li>To respond to your messages, collaborations, and studio inquiries.</li>
-          <li>To analyze how visitors interact with KuroWabi so we can improve our layout and content.</li>
-        </ul>
-
-        <h2>Cookies</h2>
-        <p>Cookies are tiny files stored on your device that help us recognize your browser. We use cookies to save your site preferences and collect metrics. You can choose to disable cookies in your web browser settings at any time, though it may alter how some elements of our site behave.</p>
-
-        <h2>Analytics (Google Analytics)</h2>
-        <p>We use Google Analytics to understand how visitors engage with KuroWabi. Google Analytics tracks anonymous metrics such as which pages you visit, how long you stay, and what device you use. This data does not contain any direct personal identity parameters and is strictly used to evaluate site performance.</p>
-
-        <h2>Email Newsletter</h2>
-        <p>If you choose to subscribe to our newsletter, we store your email address and name. We use this strictly to send you KuroWabi updates, guides, and inspiration. You can unsubscribe at any point by clicking the link at the bottom of any email we send, or by contacting hello@kurowabi.com.</p>
-
-        <h2>Affiliate Links</h2>
-        <p>KuroWabi participates in affiliate marketing programs. Some of our article cards and shop-the-look guides contain affiliate links. If you click on one of these links and make a purchase, the merchant site tracks the referral using cookies. This does not cost you anything extra, and it never influences our editorial curation or design opinions.</p>
-
-        <h2>Embedded Content</h2>
-        <p>Some pages on this site may include embedded content, such as boards and pins from Pinterest, or videos from YouTube. Embedded content behaves in the exact same way as if you visited the external platform directly. These platforms may collect data about you, use cookies, or track your interaction with the embedded content.</p>
-
-        <h2>Third-Party Services</h2>
-        <p>We work with trusted third-party providers to host our website, manage our email newsletter database, and run our web server (such as Cloudflare). These services only access your data to perform specific tasks on our behalf, in full compliance with UK GDPR standards.</p>
-
-        <h2>Data Retention</h2>
-        <p>We only keep your personal details for as long as is necessary to provide you with our newsletter or to complete form communications. If you unsubscribe from our newsletter, we permanently delete your email address from our active database.</p>
-
-        <h2>Your Rights under UK GDPR</h2>
-        <p>Under the UK GDPR, you have strong rights regarding your data. You have the right to:</p>
-        <ul>
-          <li>Request a copy of the personal details we hold about you.</li>
-          <li>Ask us to correct any incorrect information we have.</li>
-          <li>Request that we permanently delete your details from our systems.</li>
-          <li>Object to or restrict our processing of your information.</li>
-        </ul>
-        <p>To exercise any of these rights, please email us at hello@kurowabi.com.</p>
-
-        <h2>Security</h2>
-        <p>We take data security very seriously. We use secure servers, encrypted SSL protocols, and restricted databases to keep your details safe from loss, theft, or unauthorized access.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>Our website is designed for adult audiences interested in interior design. We do not knowingly collect personal details from children under the age of 13. If you believe a child has provided us with their details, please contact us and we will delete it immediately.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this policy occasionally to reflect changes in our design hub or legal guidelines. We will post any updates directly on this page with the updated date at the top.</p>
-
-        <h2>Contact Information</h2>
-        <p>If you have any questions about this privacy policy or how we handle your data, please contact us at:</p>
-        <p>Email: <a href="mailto:hello@kurowabi.com" style="color: var(--gold); text-decoration: underline;">hello@kurowabi.com</a></p>
-      </div>
-    </section>
-  </main>
-
-  <!-- EDITORIAL FOOTER PROMISE NOTE -->
-  <div class="editorial-footer-note" style="background: var(--ink); padding: 40px 24px; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.04);">
-    <p style="font-family: var(--fd); font-size: 16px; font-style: italic; color: var(--mist); letter-spacing: 0.05em; max-width: 600px; margin: 0 auto;">Thank you for supporting independent editorial publishing.</p>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="fti">
-      <div class="ftop">
-        <div class="fb">
-          <h3 class="fbn">KuroWabi</h3>
-          <h4 class="fbj">黒侘び — Dark Japandi</h4>
-          <p>A moody, minimal design destination celebrating the quiet beauty of empty space, raw textures, and intentional shadow play.</p>
-        </div>
-        <div>
-          <h4 class="fct">Rooms</h4>
-          <ul class="flinks">
-            <li><a href="/bedrooms/">Bedrooms</a></li>
-            <li><a href="index.html#rooms">Lounge Spaces</a></li>
-            <li><a href="index.html#rooms">Dining &amp; Kitchens</a></li>
-            <li><a href="index.html#rooms">Sanctuary Baths</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="fct">Design</h4>
-          <ul class="flinks">
-            <li><a href="index.html#guide">The Philosophy</a></li>
-            <li><a href="index.html#guide">Shou Sugi Ban</a></li>
-            <li><a href="index.html#lookbook">Shop Lookbook</a></li>
-            <li><a href="index.html#articles">Editorial Blog</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="fct">Brand</h4>
-          <ul class="flinks">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="index.html#guide">Atelier Loft</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="fbot">
-        <div class="fcopy">
-          &copy; 2026 KuroWabi Studio. All rights reserved. Made with intention. | <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a> | <a href="terms.html" style="text-decoration: underline;">Terms of Service</a>
-        </div>
-        <div class="fsoc">
-          <a href="#">Instagram</a>
-          <a href="#">Pinterest</a>
-          <a href="#">YouTube</a>
-        </div>
+    <div class="kw-foot-bot">
+      <span>© 2026 KuroWabi Studio. All rights reserved. Made with intention.</span>
+      <div class="kw-foot-soc">
+        <a href="https://www.instagram.com/kurowabi.studio/" target="_blank" rel="noopener" aria-label="KuroWabi on Instagram">Instagram</a>
+        <a href="https://www.pinterest.com/kurowabi/" target="_blank" rel="noopener" aria-label="KuroWabi on Pinterest">Pinterest</a>
+        <a href="https://www.youtube.com/@kurowabi" target="_blank" rel="noopener" aria-label="KuroWabi on YouTube">YouTube</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="bedroom-guide.js"></script>
+<script>
+
+  const _pg=document.getElementById('kw-pgbar');
+  if(_pg)window.addEventListener('scroll',()=>{const d=document.documentElement;_pg.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'});
+  const _ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('kw-in');_ro.unobserve(e.target)}}),{threshold:.08});
+  document.querySelectorAll('.kw-rv').forEach(el=>_ro.observe(el));
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}),);
+
+</script>
 </body>
 </html>
